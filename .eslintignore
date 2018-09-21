@@ -1,0 +1,9 @@
+ext
+**/sass/example
+**/examples
+**/build
+**/.sencha
+**/packages/remote
+**/node_modules
+**/*min.js
+**/bootstrap.js

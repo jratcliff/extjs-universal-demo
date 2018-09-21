@@ -1,0 +1,17 @@
+{
+  "name": "cmu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^5.6.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint": "./node_modules/.bin/eslint OASV2/app OASV2/classic/src; exit 0",
+    "eslint--quiet": "./node_modules/.bin/eslint OASV2/app OASV2/classic/src --quiet; exit 0"
+  },
+  "author": "",
+  "license": "ISC"
+}

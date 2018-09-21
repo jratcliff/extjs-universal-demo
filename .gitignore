@@ -1,0 +1,16 @@
+# public repo so we will not include the Ext JS SDK folders
+/ext*
+
+# these files are regenerated for each build and do not need to be tracked
+/build
+bootstrap.*
+classic.json*
+modern.json*
+.sencha
+
+# extjs cache and error logs
+resources/sass/.sass-cache/
+sencha-error*.log
+
+# extra files to ignore
+node_modules
