@@ -3,7 +3,7 @@
      *  An array of the paths to all the applications present in this workspace
      */
     "apps": [
-        "universalapp"
+        "UniversalApp"
     ],
 
     /**
@@ -25,15 +25,10 @@
      *
      */
     "frameworks": {
-        "ext653": {
-            "path":"ext",
-            "version":"6.5.3.57"
-        },
         "ext": {
             "path":"ext",
             "version":"6.5.2.463"
         }
-        
     },
 
     /**
