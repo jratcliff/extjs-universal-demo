@@ -20,6 +20,23 @@ Ext.define('UniversalApp.view.user.User', {
         selection: '{userRecord}'
     },
 
+    viewConfig: {
+        stripeRows: true,
+        plugins: {
+            gridviewdragdrop: {
+                containerScroll: true,
+                dragGroup: 'dd-grid-to-grid-group2',
+                dropGroup: 'dd-grid-to-grid-group1',
+
+                // The right hand drop zone gets special styling
+                // when dragging over it.
+                dropZone: {
+                    overClass: 'dd-over-gridview'
+                }
+            }
+        }
+    },
+
     columns: [
         {
             text: 'Name',
