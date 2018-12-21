@@ -1,0 +1,49 @@
+/**
+ * ERROR BUTTONS
+ * extjs global vars for buttons
+ */
+ $button-error-background-color: dynamic(#fff);
+ $button-error-background-color-over: dynamic(#fff);
+ $button-error-background-color-focus: dynamic($color-error);
+ $button-error-background-color-pressed: dynamic($color-error);
+ $button-error-background-color-focus-over: dynamic($color-error);
+ $button-error-background-color-focus-pressed: dynamic($color-error);
+ $button-error-background-color-disabled: dynamic(#fff);
+ 
+ $button-error-border-color: dynamic($color-error);
+ $button-error-border-color-over: dynamic($button-error-border-color);
+ $button-error-border-color-focus: dynamic($button-error-border-color-over);
+ $button-error-border-color-pressed: dynamic($button-error-border-color-over);
+ $button-error-border-color-focus-over: dynamic($button-error-border-color-over);
+ $button-error-border-color-focus-pressed: dynamic($button-error-border-color-over);
+ $button-error-border-color-disabled: dynamic($button-error-border-color-over);
+ 
+ $button-error-inner-border-width: dynamic(0); // inner-border is used to create a box shadow
+ $button-error-inner-border-width-over: dynamic($button-error-inner-border-width);
+ $button-error-inner-border-width-focus: dynamic($button-error-inner-border-width);
+ $button-error-inner-border-width-pressed: dynamic($button-error-inner-border-width);
+ $button-error-inner-border-width-focus-over: dynamic($button-error-inner-border-width);
+ $button-error-inner-border-width-focus-pressed: dynamic($button-error-inner-border-width);
+ $button-error-inner-border-width-disabled: dynamic($button-error-inner-border-width);
+ 
+ $button-error-inner-border-color: dynamic($color-error);
+ $button-error-inner-border-color-over: dynamic($color-error);
+ $button-error-inner-border-color-focus: dynamic($button-error-inner-border-color-over);
+ $button-error-inner-border-color-pressed: dynamic($button-error-inner-border-color-over);
+ $button-error-inner-border-color-focus-over: dynamic($button-error-inner-border-color-over);
+ $button-error-inner-border-color-focus-pressed: dynamic($button-error-inner-border-color-over);
+ $button-error-inner-border-color-disabled: dynamic($button-error-background-color-disabled); // use button's error background disabled color
+ 
+ $button-error-color: dynamic($color-error);
+ $button-error-color-over: dynamic($color-error);
+ $button-error-color-focus: dynamic(#fff);
+ $button-error-color-pressed: dynamic(#fff);
+ $button-error-color-focus-over: dynamic(#fff);
+ $button-error-color-focus-pressed: dynamic(#fff);
+ $button-error-color-disabled: dynamic($color-error);
+ 
+ $button-error-arrow-glyph-color: dynamic($button-error-color); // use button's error color
+ $button-error-arrow-glyph-color-disabled: dynamic($button-error-color-disabled); // use button's error disabled color
+ $button-error-glyph-color: dynamic($button-error-color); // use button's error color
+ $button-error-glyph-color-disabled: dynamic($button-error-color-disabled); // use button's error disabled color
+ 

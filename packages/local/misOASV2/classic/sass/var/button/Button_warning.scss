@@ -1,0 +1,49 @@
+/**
+ * WARNING BUTTONS
+ * extjs global vars for buttons
+ */
+ $button-warning-background-color: dynamic(#fff);
+ $button-warning-background-color-over: dynamic(#fff);
+ $button-warning-background-color-focus: dynamic($color-warning);
+ $button-warning-background-color-pressed: dynamic($color-warning);
+ $button-warning-background-color-focus-over: dynamic($color-warning);
+ $button-warning-background-color-focus-pressed: dynamic($color-warning);
+ $button-warning-background-color-disabled: dynamic(#fff);
+ 
+ $button-warning-border-color: dynamic($color-warning);
+ $button-warning-border-color-over: dynamic($button-warning-border-color);
+ $button-warning-border-color-focus: dynamic($button-warning-border-color-over);
+ $button-warning-border-color-pressed: dynamic($button-warning-border-color-over);
+ $button-warning-border-color-focus-over: dynamic($button-warning-border-color-over);
+ $button-warning-border-color-focus-pressed: dynamic($button-warning-border-color-over);
+ $button-warning-border-color-disabled: dynamic($button-warning-border-color-over);
+ 
+ $button-warning-inner-border-width: dynamic(0); // inner-border is used to create a box shadow
+ $button-warning-inner-border-width-over: dynamic($button-warning-inner-border-width);
+ $button-warning-inner-border-width-focus: dynamic($button-warning-inner-border-width);
+ $button-warning-inner-border-width-pressed: dynamic($button-warning-inner-border-width);
+ $button-warning-inner-border-width-focus-over: dynamic($button-warning-inner-border-width);
+ $button-warning-inner-border-width-focus-pressed: dynamic($button-warning-inner-border-width);
+ $button-warning-inner-border-width-disabled: dynamic($button-warning-inner-border-width);
+ 
+ $button-warning-inner-border-color: dynamic($color-warning);
+ $button-warning-inner-border-color-over: dynamic($color-warning);
+ $button-warning-inner-border-color-focus: dynamic($button-warning-inner-border-color-over);
+ $button-warning-inner-border-color-pressed: dynamic($button-warning-inner-border-color-over);
+ $button-warning-inner-border-color-focus-over: dynamic($button-warning-inner-border-color-over);
+ $button-warning-inner-border-color-focus-pressed: dynamic($button-warning-inner-border-color-over);
+ $button-warning-inner-border-color-disabled: dynamic($button-warning-background-color-disabled); // use button's warning background disabled color
+ 
+ $button-warning-color: dynamic($color-warning);
+ $button-warning-color-over: dynamic($color-warning);
+ $button-warning-color-focus: dynamic(#fff);
+ $button-warning-color-pressed: dynamic(#fff);
+ $button-warning-color-focus-over: dynamic(#fff);
+ $button-warning-color-focus-pressed: dynamic(#fff);
+ $button-warning-color-disabled: dynamic($color-warning);
+ 
+ $button-warning-arrow-glyph-color: dynamic($button-warning-color); // use button's warning color
+ $button-warning-arrow-glyph-color-disabled: dynamic($button-warning-color-disabled); // use button's warning disabled color
+ $button-warning-glyph-color: dynamic($button-warning-color); // use button's warning color
+ $button-warning-glyph-color-disabled: dynamic($button-warning-color-disabled); // use button's warning disabled color
+ 

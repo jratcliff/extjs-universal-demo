@@ -1,0 +1,33 @@
+// link button
+$button-headertool-background-color: dynamic(#a8a8a8);
+$button-headertool-background-color-over: dynamic(darken($button-headertool-background-color, 10%));
+$button-headertool-background-color-pressed: dynamic($button-headertool-background-color-over);
+$button-headertool-background-color-disabled: dynamic($button-headertool-background-color);
+
+$button-headertool-border-color: dynamic($button-headertool-background-color-over);
+$button-headertool-border-color-over: dynamic($button-headertool-background-color-over);
+$button-headertool-border-color-pressed: dynamic($button-headertool-border-color-over);
+$button-headertool-border-color-disabled: dynamic($button-headertool-border-color);
+
+$button-headertool-inner-border-width: dynamic(0);
+$button-headertool-inner-border-color: dynamic($form-text-field-border-color);
+$button-headertool-inner-border-color-disabled: dynamic($form-text-field-border-color);
+
+$button-headertool-color: dynamic(#fff);
+$button-headertool-color-over: dynamic(#fff);
+$button-headertool-color-pressed: dynamic(#fff);
+$button-headertool-color-disabled: dynamic(#fff);
+
+$button-headertool-arrow-glyph-color: dynamic($button-headertool-color);
+$button-headertool-arrow-glyph-color-over: dynamic($button-headertool-color-over);
+$button-headertool-arrow-glyph-color-pressed: dynamic($button-headertool-color-pressed);
+$button-headertool-arrow-glyph-color-disabled: dynamic($button-headertool-color-disabled);
+
+$button-headertool-glyph-color: dynamic($button-headertool-color);
+$button-headertool-glyph-color-over: dynamic($button-headertool-color-over);
+$button-headertool-glyph-color-pressed: dynamic($button-headertool-color-pressed);
+$button-headertool-glyph-color-disabled: dynamic($button-headertool-color-disabled);
+
+$button-headertool-text-transform: dynamic(capitalize);
+$button-headertool-letter-spacing: dynamic(0.3px);
+$button-headertool-border-radius: dynamic(0);

@@ -1,0 +1,97 @@
+/**
+ * Styling the $treelist-nav-ui is done differently than other components
+ * In this case there is a 'map' that holds all of the sass vars that are
+ * passed to the mixin that does the styling
+ *
+ * /ext/packages/core/sass/var/list/TreeItem.scss
+ */
+$treelist-nav-ui: dynamic((
+    padding: 0 10px,
+    background-color: #f2f2f2,
+    toolstrip-background-color: #f2f2f2,
+
+    tool-selected-color: #fff,
+    tool-selected-background-color: #b00,
+    tool-float-indicator-width: 4px,
+    tool-float-indicator-color: #f2f2f2,
+
+    item-line-height: 44px,
+
+    item-icon-width: 24px,
+    item-icon-font-size: 24px,
+    item-icon-color: #76787a,
+    item-icon-over-color: #fff,
+    
+    item-text-font-size: 13px,
+    item-text-color: #76787a,
+    item-text-over-color: #fff,
+
+    item-expanded-background-color: #f2f2f2,
+    item-expanded-child-background-color: #f2f2f2,
+
+    item-expander-font-size: 13px,
+    item-expander-width: 24px,
+    item-expander-color: #76787a,
+    item-expander-over-color: #76787a,
+
+    row-indicator-width: null,
+    row-indicator-selected-color: darken(#b00, 20%),
+    row-indicator-selected-over-color: darken(#b00, 4%),
+    row-indicator-over-color: darken(#b00, 4%),
+
+    row-over-background-color: darken(#b00, 4%),
+    row-selected-background-color: #b00,
+    row-selected-color: #fff
+
+));
+
+@mixin treelist-ui-body-patch(
+    $ui: 'nav',
+    $item-text-color: null,
+    $item-text-font-weight: null,
+    $row-selected-color: null,
+    $tool-over-color: null,
+    $tool-over-background-color: null
+) {
+    .x-treelist-#{$ui} .x-treelist-item-selected > .x-treelist-row {
+        .x-treelist-item-icon,
+        .x-treelist-item-text,
+        .x-treelist-item-expander {
+            color: $row-selected-color;
+        }
+    }
+    .x-treelist-#{$ui} .x-treelist-item-selected.x-treelist-item-floated > .x-treelist-row {
+        .x-treelist-item-icon,
+        .x-treelist-item-text,
+        .x-treelist-item-expander {
+            color: $item-text-color;
+        }
+    }
+
+    // adding support for font weight
+    .x-treelist-#{$ui} .x-treelist-item-text {
+        font-weight: $item-text-font-weight;
+    }
+
+    // adding support for tool 'over' styling
+    .x-treelist-#{$ui} .x-treelist-item-tool.x-treelist-item-over {
+        color: $tool-over-color;
+        background-color: $tool-over-background-color
+    }
+
+    // adding overflow to the treelist so that all items can be accessed
+    .x-treelist {
+        &.x-treelist-#{$ui} {
+            overflow-y: auto;
+        }
+    }
+}
+
+@include treelist-ui-body-patch(
+    $ui: 'nav',
+    $item-text-color: #76787a,
+    $item-text-font-weight: 600,
+    $row-selected-color: #fff,
+    $tool-over-color: #fff,
+    $tool-over-background-color: #b00
+);

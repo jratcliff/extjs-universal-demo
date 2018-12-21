@@ -1,0 +1,50 @@
+/**
+ * Creates a visual theme for 'error' buttons.
+ */
+ @mixin cmu-button-error(
+    $ui: 'error',
+    $scale-list: small medium large,
+
+    $background-color: $button-error-background-color,
+    $background-color-over: $button-error-background-color-over,
+    $background-color-pressed: $button-error-background-color-pressed,
+
+    $border-color: $button-error-border-color,
+    $border-color-over: $button-error-border-color-over,
+    $border-color-pressed: $button-error-border-color-pressed,
+
+    $inner-border-color: $button-error-inner-border-color,
+    $inner-border-color-over: $button-error-inner-border-color-over,
+    $inner-border-color-pressed: $button-error-inner-border-color-pressed,
+
+    $color: $button-error-color,
+    $color-over: $button-error-color-over,
+    $arrow-glyph-color: $button-error-arrow-glyph-color
+
+) {
+
+    @each $scale in $scale-list {
+        @include cmu-button-ui(
+            $ui: $ui,
+            $scale: $scale,
+
+            $background-color: $background-color,
+            $background-color-over: $background-color-over,
+            $background-color-pressed: $background-color-pressed,
+
+            $border-color: $border-color,
+            $border-color-over: $border-color-over,
+            $border-color-pressed: $border-color-pressed,
+
+            $inner-border-color: $inner-border-color,
+            $inner-border-color-over: $inner-border-color-over,
+            $inner-border-color-pressed: $inner-border-color-pressed,
+
+            $color: $color,
+            $color-over: $color-over,
+            $arrow-glyph-color: $arrow-glyph-color
+        )
+    }
+}
+
+@include cmu-button-error();

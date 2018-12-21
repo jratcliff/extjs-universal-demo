@@ -1,0 +1,68 @@
+/**
+ * Creates a visual theme for 'secondary' buttons.
+ */
+ @mixin cmu-button-secondary(
+    $ui: 'secondary',
+    $scale-list: small medium large,
+
+    $background-color: $button-secondary-background-color,
+    $background-color-over: $button-secondary-background-color-over,
+    $background-color-pressed: $button-secondary-background-color-pressed,
+    $background-color-disabled: $button-secondary-background-color-disabled,
+
+    $background-gradient: $button-secondary-background-gradient,
+    $background-gradient-over: $button-secondary-background-gradient-over,
+    $background-gradient-pressed: $button-secondary-background-gradient-pressed,
+    $background-gradient-disabled: $button-secondary-background-gradient-disabled,
+
+    $border-color: $button-secondary-border-color,
+    $border-color-over: $button-secondary-border-color-over,
+    $border-color-pressed: $button-secondary-border-color-pressed,
+    $border-color-disabled: $button-secondary-border-color-disabled,
+
+    $inner-border-color: $button-secondary-inner-border-color,
+    $inner-border-color-over: $button-secondary-inner-border-color-over,
+    $inner-border-color-pressed: $button-secondary-inner-border-color-pressed,
+    $inner-border-color-disabled: $button-secondary-inner-border-color-disabled,
+
+    $color: $button-secondary-color,
+    $color-disabled: $button-secondary-color-disabled,
+
+    $arrow-glyph-color: $button-secondary-arrow-glyph-color
+
+) {
+
+    @each $scale in $scale-list {
+        @include cmu-button-ui(
+            $ui: $ui,
+            $scale: $scale,
+
+            $background-color: $background-color,
+            $background-color-over: $background-color-over,
+            $background-color-pressed: $background-color-pressed,
+            $background-color-disabled: $background-color-disabled,
+
+            $background-gradient: $background-gradient,
+            $background-gradient-over: $background-gradient-over,
+            $background-gradient-pressed: $background-gradient-pressed,
+            $background-gradient-disabled: $background-gradient-disabled,
+
+            $border-color: $border-color,
+            $border-color-over: $border-color-over,
+            $border-color-pressed: $border-color-pressed,
+            $border-color-disabled: $border-color-disabled,
+
+            $inner-border-color: $inner-border-color,
+            $inner-border-color-over: $inner-border-color-over,
+            $inner-border-color-pressed: $inner-border-color-pressed,
+            $inner-border-color-disabled: $inner-border-color-disabled,
+
+            $color: $color,
+            $color-disabled: $color-disabled,
+
+            $arrow-glyph-color: $arrow-glyph-color
+        )
+    }
+}
+
+@include cmu-button-secondary();

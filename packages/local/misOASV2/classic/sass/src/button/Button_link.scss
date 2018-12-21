@@ -1,0 +1,101 @@
+/**
+ * UI for a 'link' button which is useful for showing a glyph button
+ * but not showing the border/background of the button itself and instead
+ * just showing the glyph
+ */
+@mixin cmu-button-link(
+    $ui: 'link',
+    $scale-list: small medium large,
+
+    $background-color: $button-link-background-color,
+    $background-color-disabled: $button-link-background-color,
+
+    $border-color: $button-link-border-color,
+    $border-color-disabled: $button-link-border-color-disabled,
+
+    $inner-border-color: $button-link-inner-border-color,
+    $inner-border-color-disabled: $button-link-inner-border-color-disabled,
+
+    $color: $button-link-color,
+    $color-over: $button-link-color-over,
+    $color-pressed: $button-link-color-pressed,
+    $color-disabled: $button-link-color-disabled,
+
+    $arrow-glyph-color: $button-link-arrow-glyph-color,
+    $arrow-glyph-color-over: $button-link-arrow-glyph-color-over,
+    $arrow-glyph-color-pressed: $button-link-arrow-glyph-color-pressed,
+    $arrow-glyph-color-disabled: $button-link-arrow-glyph-color-disabled,
+
+    $glyph-color: $button-link-glyph-color,
+    $glyph-color-over: $button-link-glyph-color-over,
+    $glyph-color-pressed: $button-link-glyph-color-pressed,
+    $glyph-color-disabled: $button-link-glyph-color-disabled,
+
+    $inner-opacity-disabled: $button-link-inner-opacity-disabled,
+
+    $padding: 0,
+    $text-padding: 0,
+
+    $text-transform: $button-link-text-transform,
+    $letter-spacing: $button-link-letter-spacing,
+    $line-height: 1,
+    $font-family: $font-family,
+
+    $border-width: 0,
+    $border-radius: 0
+) {
+
+    @each $scale in $scale-list {
+        @include cmu-button-ui(
+            $ui: $ui,
+            $scale: $scale,
+
+            $background-color: $background-color,
+            $background-color-disabled: $background-color-disabled,
+
+            $border-color: $border-color,
+            $border-color-disabled: $border-color-disabled,
+
+            $inner-border-color: $inner-border-color,
+            $inner-border-color-disabled: $inner-border-color-disabled,
+
+            $color: $color,
+            $color-over: $color-over,
+            $color-pressed: $color-pressed,
+            $color-disabled: $color-disabled,
+
+            $arrow-glyph-color: $arrow-glyph-color,
+            $arrow-glyph-color-over: $arrow-glyph-color-over,
+            $arrow-glyph-color-pressed: $arrow-glyph-color-pressed,
+            $arrow-glyph-color-disabled: $arrow-glyph-color-disabled,
+
+            $glyph-color: $glyph-color,
+            $glyph-color-over: $glyph-color-over,
+            $glyph-color-pressed: $glyph-color-pressed,
+            $glyph-color-disabled: $glyph-color-disabled,
+
+            $padding: $padding,
+            $text-padding: $text-padding,
+
+            $inner-opacity-disabled: $inner-opacity-disabled,
+
+            $text-transform: $text-transform,
+            $letter-spacing: $letter-spacing,
+            $line-height: $line-height,
+            $font-family: $font-family,
+
+            $border-width: $border-width,
+            $border-radius: $border-radius
+        );
+
+        // for small (default sized) link buttons we let the font size be the same as any other grid item
+        @if ($scale == 'small') {
+            .x-grid-item .x-btn-inner-link-small {
+                font-size: inherit;
+            }
+        }
+    }
+
+}
+
+@include cmu-button-link();

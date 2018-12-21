@@ -1,0 +1,44 @@
+/*
+ * This file contains styling for the Main view.
+ */
+
+ .header {
+     height: 50px; 
+     line-height: 50px; 
+     background: #f2f2f2; 
+     border-bottom: 2px solid #e3e3e3 !important;
+     padding: 0 0 0 10px;
+ }
+
+.header_red {
+    color: #b00;
+    font-size: 3em;
+    font-weight: 700;
+}
+.header_mis {
+    font-size: 3em;
+    color: #76787a;
+}
+.header_approval {
+    color: #76787a;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.footer {
+    height: 80px; 
+    background: #4a4a4a;
+    color: white;
+}
+
+.footer_image {
+    height: 50px;
+    padding: 5px 5px 5px 10px;
+}
+
+.footer_copyright {
+    font-size: 11px;
+    text-align: right;
+    min-width: 200px;
+    padding: 5px;
+}

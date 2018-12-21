@@ -1,0 +1,98 @@
+
+// font sizes
+$font-size-xx-small: dynamic(10px);
+$font-size-x-small: dynamic(11px);
+$font-size-small: dynamic(12px);
+$font-size-medium: dynamic(13px);
+$font-size-large: dynamic(16px);
+$font-size-x-large: dynamic(18px);
+$font-size-xx-large: dynamic(20px);
+$font-size-xxx-large: dynamic(22px);
+$font-size-header: dynamic(24px); // panel and window titles
+$font-size-header-large: dynamic(28px);
+$font-size-header-x-large: dynamic(32px);
+
+// font weights
+$font-weight-light: dynamic(300);
+$font-weight-normal: dynamic(400);
+$font-weight-semibold: dynamic(600);
+$font-weight-bold: dynamic(700);
+
+// icon font sizes for buttons, menu items, etc
+$icon-font-size-x-small: dynamic(16px);
+$icon-font-size-small: dynamic(18px);
+$icon-font-size-medium: dynamic(24px);
+$icon-font-size-large: dynamic(30px);
+
+// custom CMU colors pallete
+$cmu-blue-1: dynamic(#0078d2); // used in links and top color of primary gradient buttons
+$cmu-blue-2: dynamic(#0061ab); // bottom color in primary gradient buttons
+$cmu-blue-3: dynamic(#00487f); // color used for panel and window title and bottom color in hovered primary gradient buttons
+$cmu-gray-1: dynamic(#36495a); // normal text color and top color of secondary gradient buttons
+$cmu-gray-2: dynamic(#404040); // bottom color in secondary gradient buttons
+$cmu-gray-3: dynamic(#323232); // bottom color in hovered secondary gradient buttons
+$cmu-green: dynamic(#008712);
+$cmu-red: dynamic(#b00);
+$cmu-orange: dynamic(#d14904);
+$cmu-black: dynamic(#000000); // font color for everything else - Changed as per request from Business, original one was $cmu-black: dynamic(#131313);
+
+$cmu-base-color: dynamic(#265980);
+
+// text colors
+$header-color: dynamic($cmu-blue-3); // used for panel and window titles and headings
+$content-color: dynamic($cmu-black); // normal font color for everything else
+
+$add-color: dynamic($cmu-green);
+$change-color: dynamic($cmu-orange);
+$drop-color: dynamic($cmu-red);
+$error-color: dynamic(#a94442);
+
+$add-background-color: dynamic(#c2ffca);
+$change-background-color: dynamic(#fed7c3);
+$drop-background-color: dynamic(#ffc3cb);
+$error-background-color: dynamic(#f2dede);
+
+$color-info: dynamic($cmu-green);
+$color-success: dynamic($cmu-green);
+$color-warning: dynamic($cmu-orange);
+$color-error: dynamic($cmu-red);
+
+// link colors
+$link-color: dynamic($cmu-blue-1);
+$link-color-over: dynamic(#006db4);
+$link-color-pressed: dynamic(#0062a3);
+$link-color-disabled: dynamic(#0077c5);
+$link-color-opacity-disabled: dynamic(0.4);
+
+// alert warning colors
+$alert-warning-background-color: dynamic(#fcf8e3);
+$alert-warning-border-color: dynamic(#faf2cc);
+$alert-warning-color: dynamic(#8a6d3b);
+
+// alert error colors
+$alert-error-background-color: dynamic(#f2dede);
+$alert-error-border-color: dynamic(#ebcccc);
+$alert-error-color: dynamic(#a94442);
+
+// alert success colors
+$alert-success-background-color: dynamic(#dff0d8);
+$alert-success-border-color: dynamic(#d0e9c6);
+$alert-success-color: dynamic(#3c763d);
+
+// alert info colors
+$alert-info-background-color: dynamic(#d9edf7);
+$alert-info-border-color: dynamic(#bcdff1);
+$alert-info-color: dynamic(#31708f);
+
+
+
+/* framework globals */
+$base-color: dynamic($cmu-base-color);
+$color: dynamic($content-color);
+$line-height: dynamic(1.5);
+
+$font-size: dynamic($font-size-medium);
+$font-weight: dynamic($font-weight-normal);
+
+$enable-font-open-sans: dynamic(true);
+$font-family: dynamic('Open Sans', sans-serif);

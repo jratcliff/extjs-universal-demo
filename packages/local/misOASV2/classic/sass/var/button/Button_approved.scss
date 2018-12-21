@@ -1,0 +1,50 @@
+/**
+ * Approved BUTTONS
+ * extjs global vars for buttons
+ */
+
+ $button-approved-background-color: dynamic(#fff);
+ $button-approved-background-color-over: dynamic(#fff);
+ $button-approved-background-color-focus: dynamic($color-info);
+ $button-approved-background-color-pressed: dynamic($color-info);
+ $button-approved-background-color-focus-over: dynamic($color-info);
+ $button-approved-background-color-focus-pressed: dynamic($color-info);
+ $button-approved-background-color-disabled: dynamic(#fff);
+ 
+ $button-approved-border-color: dynamic($color-info);
+ $button-approved-border-color-over: dynamic($button-approved-border-color);
+ $button-approved-border-color-focus: dynamic($button-approved-border-color-over);
+ $button-approved-border-color-pressed: dynamic($button-approved-border-color-over);
+ $button-approved-border-color-focus-over: dynamic($button-approved-border-color-over);
+ $button-approved-border-color-focus-pressed: dynamic($button-approved-border-color-over);
+ $button-approved-border-color-disabled: dynamic($button-approved-border-color-over);
+ 
+ $button-approved-inner-border-width: dynamic(0); // inner-border is used to create a box shadow
+ $button-approved-inner-border-width-over: dynamic($button-approved-inner-border-width);
+ $button-approved-inner-border-width-focus: dynamic($button-approved-inner-border-width);
+ $button-approved-inner-border-width-pressed: dynamic($button-approved-inner-border-width);
+ $button-approved-inner-border-width-focus-over: dynamic($button-approved-inner-border-width);
+ $button-approved-inner-border-width-focus-pressed: dynamic($button-approved-inner-border-width);
+ $button-approved-inner-border-width-disabled: dynamic($button-approved-inner-border-width);
+ 
+ $button-approved-inner-border-color: dynamic($color-info);
+ $button-approved-inner-border-color-over: dynamic($color-info);
+ $button-approved-inner-border-color-focus: dynamic($button-approved-inner-border-color-over);
+ $button-approved-inner-border-color-pressed: dynamic($button-approved-inner-border-color-over);
+ $button-approved-inner-border-color-focus-over: dynamic($button-approved-inner-border-color-over);
+ $button-approved-inner-border-color-focus-pressed: dynamic($button-approved-inner-border-color-over);
+ $button-approved-inner-border-color-disabled: dynamic($button-approved-background-color-disabled); // use button's approved background disabled color
+ 
+ $button-approved-color: dynamic($color-info);
+ $button-approved-color-over: dynamic($color-info);
+ $button-approved-color-focus: dynamic(#fff);
+ $button-approved-color-pressed: dynamic(#fff);
+ $button-approved-color-focus-over: dynamic(#fff);
+ $button-approved-color-focus-pressed: dynamic(#fff);
+ $button-approved-color-disabled: dynamic($color-info);
+ 
+ $button-approved-arrow-glyph-color: dynamic($button-approved-color); // use button's approved color
+ $button-approved-arrow-glyph-color-disabled: dynamic($button-approved-color-disabled); // use button's approved disabled color
+ $button-approved-glyph-color: dynamic($button-approved-color); // use button's approved color
+ $button-approved-glyph-color-disabled: dynamic($button-approved-color-disabled); // use button's approved disabled color
+ 

@@ -1,0 +1,62 @@
+{
+    "children": [
+        {
+            "text": "Dashboard",
+            "routeId": "dashboard",
+            "xtype": "app-dashboard",
+            "iconCls": "x-fa fa-dashboard",
+            "rowCls": "nav-tree-badge",
+            "leaf": true
+        },
+        {
+            "text": "Efforts",
+            "routeId": "efforts",
+            "iconCls": "x-fa fa-clock-o",
+            "rowCls": "nav-tree-badge",
+            "leaf": true
+        },
+        {
+            "text": "PTO Confirmation",
+            "routeId": "ptoconfirmation",
+            "iconCls": "x-fa fa-compass",
+            "rowCls": "nav-tree-badge",
+            "leaf": true
+        },
+        {
+            "text": "Purchases",
+            "routeId": "purchases",
+            "iconCls": "x-fa fa-shopping-cart",
+            "rowCls": "nav-tree-badge",
+            "leaf": true
+        },
+        {
+            "text": "Personnel",
+            "routeId": "personnel",
+            "iconCls": "x-fa fa-user",
+            "rowCls": "nav-tree-badge",
+            "leaf": true
+        },
+        {
+            "text": "ADMIN",
+            "expanded": true,
+            "iconCls": "x-fa fa-lock",
+            "rowCls": "",
+            "children": [
+                {
+                    "text": "Designee Management",
+                    "routeId": "admin/designee",
+                    "iconCls": "x-fa fa-key",
+                    "rowCls": "nav-tree-badge",
+                    "leaf": true
+                },
+                {
+                    "text": "Approver Groups",
+                    "routeId": "admin/approver",
+                    "iconCls": "x-fa fa-group",
+                    "rowCls": "nav-tree-badge",
+                    "leaf": true
+                }
+            ]
+        }
+    ]
+}

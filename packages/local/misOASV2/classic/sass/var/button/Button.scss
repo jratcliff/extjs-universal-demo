@@ -1,0 +1,80 @@
+// font family
+$button-small-font-family: dynamic($font-family);
+$button-medium-font-family: dynamic($font-family);
+$button-large-font-family: dynamic($font-family);
+
+// font weight
+$button-small-font-weight: dynamic($font-weight-bold);
+$button-medium-font-weight: dynamic($font-weight-bold);
+$button-large-font-weight: dynamic($font-weight-bold);
+
+// font sizes
+$button-small-font-size: dynamic($font-size-small);
+$button-medium-font-size: dynamic($font-size-medium);
+$button-large-font-size: dynamic($font-size-x-large);
+
+
+// button heights per spec
+$button-large-spec-height: dynamic(40px);
+$button-medium-spec-height: dynamic(36px);
+$button-small-spec-height: dynamic(32px);
+
+// border-width (set all to the same value)
+$button-large-border-width: dynamic(1px);
+$button-medium-border-width: dynamic(1px);
+$button-small-border-width: dynamic(1px);
+
+// border-radius (set all to the same)
+$button-large-border-radius: dynamic(2px);
+$button-medium-border-radius: dynamic(2px);
+$button-small-border-radius: dynamic(2px);
+
+// padding set top/bottom padding to 1 less than border radius since padding is used to calculate line-height
+$button-large-padding: dynamic(1px 7px);
+$button-medium-padding: dynamic(1px 7px);
+$button-small-padding: dynamic(1px 7px);
+
+// text padding (set all to the same, Neptune was using 10px, 8px, 5px)
+$button-large-text-padding: dynamic(4px);
+$button-medium-text-padding: dynamic(4px);
+$button-small-text-padding: dynamic(4px);
+
+// calculate the line-height needed sizes to satisfy spec button heights
+$button-large-line-height: dynamic($button-large-spec-height - vertical($button-large-border-width) - vertical($button-large-padding));
+$button-medium-line-height: dynamic($button-medium-spec-height - vertical($button-medium-border-width) - vertical($button-medium-padding));
+$button-small-line-height: dynamic($button-small-spec-height - vertical($button-small-border-width) - vertical($button-small-padding));
+
+// icon sizes
+$button-large-icon-size: dynamic($icon-font-size-large);
+$button-medium-icon-size: dynamic($icon-font-size-medium);
+$button-small-icon-size: dynamic($icon-font-size-small);
+
+// glyph font sizes
+$button-large-glyph-font-size: dynamic($button-large-icon-size);
+$button-medium-glyph-font-size: dynamic($button-medium-icon-size);
+$button-small-glyph-font-size: dynamic($button-small-icon-size);
+
+
+// opacity settings
+$button-opacity-disabled: dynamic(0.3); // change the opacity of disabled buttons
+$button-inner-opacity-disabled: dynamic(1); // but do not change the opacity of the text on the buttons
+$button-toolbar-opacity-disabled: dynamic($button-opacity-disabled); // default to button's opacity
+$button-toolbar-inner-opacity-disabled: dynamic($button-inner-opacity-disabled); // default to button's inner (text) opacity
+$arrow-glyph-opacity-disabled: dynamic($button-inner-opacity-disabled); // default to button's inner opacity
+
+
+// custom cmu vars
+$cmu-button-text-transform: dynamic(inherit);
+$cmu-button-letter-spacing: normal;
+
+// import the vars for the button UIs
+// @import 'Button_approved';
+// @import 'Button_default';
+// @import 'Button_error';
+// @import 'Button_filterpanel';
+// @import 'Button_headertool';
+// @import 'Button_link';
+// @import 'Button_primary';
+// @import 'Button_secondary';
+// @import 'Button_warning';
+

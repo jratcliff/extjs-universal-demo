@@ -1,0 +1,29 @@
+// link button
+$button-link-background-color: dynamic(transparent);
+$button-link-background-color-disabled: dynamic(transparent);
+
+$button-link-border-color: dynamic(transparent);
+$button-link-border-color-disabled: dynamic(transparent);
+
+$button-link-inner-border-color: dynamic(transparent);
+$button-link-inner-border-color-disabled: dynamic(transparent);
+
+$button-link-color: dynamic($link-color);
+$button-link-color-over: dynamic($link-color-over);
+$button-link-color-pressed: dynamic($link-color-pressed);
+$button-link-color-disabled: dynamic($link-color-disabled);
+
+$button-link-arrow-glyph-color: dynamic($button-link-color);
+$button-link-arrow-glyph-color-over: dynamic($button-link-color-over);
+$button-link-arrow-glyph-color-pressed: dynamic($button-link-color-pressed);
+$button-link-arrow-glyph-color-disabled: dynamic($button-link-color-disabled);
+
+$button-link-glyph-color: dynamic($button-link-color);
+$button-link-glyph-color-over: dynamic($button-link-color-over);
+$button-link-glyph-color-pressed: dynamic($button-link-color-pressed);
+$button-link-glyph-color-disabled: dynamic($button-link-color-disabled);
+
+$button-link-inner-opacity-disabled: dynamic($link-color-opacity-disabled);
+
+$button-link-text-transform: dynamic(none); // do not transform link text
+$button-link-letter-spacing: dynamic(0.3px);

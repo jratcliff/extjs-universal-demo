@@ -1,0 +1,84 @@
+/**
+ * UI for a 'headertool' button 
+ */
+ @mixin cmu-button-headertool(
+    $ui: 'headertool',
+    $scale-list: small medium large,
+
+    $background-color: $button-headertool-background-color,
+    $background-color-over: $button-headertool-background-color-over,
+    $background-color-pressed: $button-headertool-background-color-pressed,
+    $background-color-disabled: $button-headertool-background-color,
+
+    $border-color: $button-headertool-border-color,
+    $border-color-over: $button-headertool-border-color-over,
+    $border-color-pressed: $button-headertool-border-color-pressed,
+    $border-color-disabled: $button-headertool-border-color-disabled,
+
+    $inner-border-width: $button-headertool-inner-border-width,
+    $inner-border-color: $button-headertool-inner-border-color,
+    $inner-border-color-disabled: $button-headertool-inner-border-color-disabled,
+
+    $color: $button-headertool-color,
+    $color-over: $button-headertool-color-over,
+    $color-pressed: $button-headertool-color-pressed,
+    $color-disabled: $button-headertool-color-disabled,
+
+    $arrow-glyph-color: $button-headertool-arrow-glyph-color,
+    $arrow-glyph-color-over: $button-headertool-arrow-glyph-color-over,
+    $arrow-glyph-color-pressed: $button-headertool-arrow-glyph-color-pressed,
+    $arrow-glyph-color-disabled: $button-headertool-arrow-glyph-color-disabled,
+
+    $glyph-color: $button-headertool-glyph-color,
+    $glyph-color-over: $button-headertool-glyph-color-over,
+    $glyph-color-pressed: $button-headertool-glyph-color-pressed,
+    $glyph-color-disabled: $button-headertool-glyph-color-disabled,
+
+    $text-transform: $button-headertool-text-transform,
+    $letter-spacing: $button-headertool-letter-spacing,
+    $border-radius: $button-headertool-border-radius
+) {
+
+    @each $scale in $scale-list {
+        @include cmu-button-ui(
+            $ui: $ui,
+            $scale: $scale,
+
+            $background-color: $background-color,
+            $background-color-over: $background-color-over,
+            $background-color-pressed: $background-color-pressed,
+            $background-color-disabled: $background-color-disabled,
+
+            $border-color: $border-color,
+            $border-color-over: $border-color-over,
+            $border-color-pressed: $border-color-pressed,
+            $border-color-disabled: $border-color-disabled,
+
+            $inner-border-width: $inner-border-width,
+            $inner-border-color: $inner-border-color,
+            $inner-border-color-disabled: $inner-border-color-disabled,
+
+            $color: $color,
+            $color-over: $color-over,
+            $color-pressed: $color-pressed,
+            $color-disabled: $color-disabled,
+
+            $arrow-glyph-color: $arrow-glyph-color,
+            $arrow-glyph-color-over: $arrow-glyph-color-over,
+            $arrow-glyph-color-pressed: $arrow-glyph-color-pressed,
+            $arrow-glyph-color-disabled: $arrow-glyph-color-disabled,
+
+            $glyph-color: $glyph-color,
+            $glyph-color-over: $glyph-color-over,
+            $glyph-color-pressed: $glyph-color-pressed,
+            $glyph-color-disabled: $glyph-color-disabled,
+
+            $text-transform: $text-transform,
+            $letter-spacing: $letter-spacing,
+            $border-radius: $border-radius
+        );
+    }
+
+}
+
+@include cmu-button-headertool();

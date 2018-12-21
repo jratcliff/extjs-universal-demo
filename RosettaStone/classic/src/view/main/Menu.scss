@@ -1,0 +1,29 @@
+
+.main-menu {
+
+    border-right: 2px solid #e3e3e3 !important;
+
+    /**
+     * expand/collapse menu item styling
+     */
+    .menu-expand-item {
+        border-top: 2px solid #e3e3e3;
+
+        // when treelist has micro config set to false (icons and text shown)
+        .x-treelist-item-icon {
+            &.menu-expand-icon {
+                @extend .x-fa;
+                @extend .fa-angle-double-left;
+                right: 0;
+            }
+        }
+
+        // when treelist has micro config set to true (icons only shown)
+        .x-treelist-item-tool {
+            &.menu-expand-icon {
+                @extend .x-fa;
+                @extend .fa-angle-double-right;
+            }
+        }
+    }
+}
