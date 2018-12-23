@@ -14,3 +14,8 @@ sencha-error*.log
 
 # extra files to ignore
 node_modules
+
+
+# files that are normally ignored but are needed to be tracked
+!docs/**/classic.json*
+!docs/**/modern.json*
