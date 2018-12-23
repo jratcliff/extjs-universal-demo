@@ -9197,6 +9197,33 @@ div.x-form-text-grow .x-form-textarea {
     width: 1px;
     background-color: #0f0f0f;
 }
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/src/view/DropZone.scss:1 */
+.x-grid-drop-indicator {
+    position: absolute;
+    height: 1px;
+    line-height: 0px;
+    background-color: #77bc71;
+    overflow: visible;
+    pointer-events: none;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/src/view/DropZone.scss:9 */
+.x-grid-drop-indicator .x-grid-drop-indicator-left {
+    position: absolute;
+    top: -8px;
+    left: -12px;
+    background-image: url(images/grid/dd-insert-arrow-right.png);
+    height: 16px;
+    width: 16px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/src/view/DropZone.scss:18 */
+.x-grid-drop-indicator .x-grid-drop-indicator-right {
+    position: absolute;
+    top: -8px;
+    right: -11px;
+    background-image: url(images/grid/dd-insert-arrow-left.png);
+    height: 16px;
+    width: 16px;
+}
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/src/grid/header/DropZone.scss:1 */
 .x-col-move-top,
 .x-col-move-bottom {
@@ -15348,16 +15375,4 @@ div.x-form-text-grow .x-form-textarea {
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/packages/font-awesome/sass/etc/_icons.scss:184 */
 .fa-hand-o-up:before {
     content: "\f0a6" !important;
-}
-/* /Users/sencha/Sites/CMU/extjs-workspace/ext/packages/font-awesome/sass/etc/_icons.scss:185 */
-.fa-hand-o-down:before {
-    content: "\f0a7" !important;
-}
-/* /Users/sencha/Sites/CMU/extjs-workspace/ext/packages/font-awesome/sass/etc/_icons.scss:186 */
-.fa-arrow-circle-left:before {
-    content: "\f0a8" !important;
-}
-/* /Users/sencha/Sites/CMU/extjs-workspace/ext/packages/font-awesome/sass/etc/_icons.scss:187 */
-.fa-arrow-circle-right:before {
-    content: "\f0a9" !important;
 }

@@ -67001,6 +67001,154 @@ Ext.define('Ext.grid.RowContext', {constructor:function(config) {
   }
   return ret;
 }}});
+Ext.define('Ext.view.DropZone', {extend:Ext.dd.DropZone, indicatorCls:Ext.baseCSSPrefix + 'grid-drop-indicator', indicatorHtml:['\x3cdiv class\x3d"', Ext.baseCSSPrefix, 'grid-drop-indicator-left" role\x3d"presentation"\x3e\x3c/div\x3e', '\x3cdiv class\x3d"' + Ext.baseCSSPrefix + 'grid-drop-indicator-right" role\x3d"presentation"\x3e\x3c/div\x3e'].join(''), constructor:function(config) {
+  var me = this;
+  Ext.apply(me, config);
+  if (!me.ddGroup) {
+    me.ddGroup = 'view-dd-zone-' + me.view.id;
+  }
+  me.callParent([me.view.el]);
+}, fireViewEvent:function() {
+  var me = this, result;
+  me.lock();
+  result = me.view.fireEvent.apply(me.view, arguments);
+  me.unlock();
+  return result;
+}, getTargetFromEvent:function(e) {
+  var node = e.getTarget(this.view.getItemSelector()), mouseY, nodeList, testNode, i, len, box;
+  if (!node) {
+    mouseY = e.getY();
+    for (i = 0, nodeList = this.view.getNodes(), len = nodeList.length; i < len; i++) {
+      testNode = nodeList[i];
+      box = Ext.fly(testNode).getBox();
+      if (mouseY <= box.bottom) {
+        return testNode;
+      }
+    }
+  }
+  return node;
+}, getIndicator:function() {
+  var me = this;
+  if (!me.indicator) {
+    me.indicator = new Ext.Component({ariaRole:'presentation', html:me.indicatorHtml, cls:me.indicatorCls, ownerCt:me.view, floating:true, alignOnScroll:false, shadow:false});
+  }
+  return me.indicator;
+}, getPosition:function(e, node) {
+  var y = e.getXY()[1], region = Ext.fly(node).getRegion(), pos;
+  if (region.bottom - y >= (region.bottom - region.top) / 2) {
+    pos = 'before';
+  } else {
+    pos = 'after';
+  }
+  return pos;
+}, containsRecordAtOffset:function(records, record, offset) {
+  if (!record) {
+    return false;
+  }
+  var view = this.view, recordIndex = view.indexOf(record), nodeBefore = view.getNode(recordIndex + offset), recordBefore = nodeBefore ? view.getRecord(nodeBefore) : null;
+  return recordBefore && Ext.Array.contains(records, recordBefore);
+}, positionIndicator:function(node, data, e) {
+  var me = this, view = me.view, pos = me.getPosition(e, node), overRecord = view.getRecord(node), draggingRecords = data.records, indicatorY, scrollable, scrollableEl, container;
+  if (!Ext.Array.contains(draggingRecords, overRecord) && (pos === 'before' && !me.containsRecordAtOffset(draggingRecords, overRecord, -1) || pos === 'after' && !me.containsRecordAtOffset(draggingRecords, overRecord, 1))) {
+    me.valid = true;
+    if (me.overRecord !== overRecord || me.currentPosition !== pos) {
+      scrollable = me.view.getScrollable();
+      scrollableEl = scrollable && scrollable.getElement();
+      container = scrollableEl && !scrollableEl.isScrollable() ? scrollableEl : Ext.fly(view.getNodeContainer());
+      indicatorY = Ext.fly(node).getY() - container.getY() - 1;
+      if (pos === 'after') {
+        indicatorY += Ext.fly(node).getHeight();
+      }
+      me.getIndicator().setWidth(Ext.fly(view.el).getWidth()).showAt(0, indicatorY);
+      me.overRecord = overRecord;
+      me.currentPosition = pos;
+    }
+  } else {
+    me.invalidateDrop();
+  }
+}, invalidateDrop:function() {
+  if (this.valid) {
+    this.valid = false;
+    this.getIndicator().hide();
+  }
+}, onNodeOver:function(node, dragZone, e, data) {
+  var me = this;
+  if (!Ext.Array.contains(data.records, me.view.getRecord(node))) {
+    me.positionIndicator(node, data, e);
+  }
+  return me.valid ? me.dropAllowed : me.dropNotAllowed;
+}, notifyOut:function(node, dragZone, e, data) {
+  var me = this;
+  me.callParent(arguments);
+  me.overRecord = me.currentPosition = null;
+  me.valid = false;
+  if (me.indicator) {
+    me.indicator.hide();
+  }
+}, onContainerOver:function(dd, e, data) {
+  var me = this, view = me.view, count = view.dataSource.getCount();
+  if (count) {
+    me.positionIndicator(view.all.last(), data, e);
+  } else {
+    me.overRecord = me.currentPosition = null;
+    me.getIndicator().setWidth(Ext.fly(view.el).getWidth()).showAt(0, 0);
+    me.valid = true;
+  }
+  return me.dropAllowed;
+}, onContainerDrop:function(dd, e, data) {
+  return this.onNodeDrop(dd, null, e, data);
+}, onNodeDrop:function(targetNode, dragZone, e, data) {
+  var me = this, dropHandled = false, overRecord = me.overRecord, currentPosition = me.currentPosition, dropHandlers = {wait:false, processDrop:function() {
+    me.invalidateDrop();
+    me.handleNodeDrop(data, overRecord, currentPosition);
+    dropHandled = true;
+    me.fireViewEvent('drop', targetNode, data, overRecord, currentPosition);
+  }, cancelDrop:function() {
+    me.invalidateDrop();
+    dropHandled = true;
+  }}, performOperation = false;
+  if (me.valid) {
+    performOperation = me.fireViewEvent('beforedrop', targetNode, data, overRecord, currentPosition, dropHandlers);
+    if (dropHandlers.wait) {
+      return;
+    }
+    if (performOperation !== false) {
+      if (!dropHandled) {
+        dropHandlers.processDrop();
+      }
+    }
+  }
+  return performOperation;
+}, destroy:function() {
+  this.indicator = Ext.destroy(this.indicator);
+  this.callParent();
+}});
+Ext.define('Ext.grid.ViewDropZone', {extend:Ext.view.DropZone, indicatorHtml:'\x3cdiv class\x3d"' + Ext.baseCSSPrefix + 'grid-drop-indicator-left" role\x3d"presentation"\x3e\x3c/div\x3e\x3cdiv class\x3d"' + Ext.baseCSSPrefix + 'grid-drop-indicator-right" role\x3d"presentation"\x3e\x3c/div\x3e', indicatorCls:Ext.baseCSSPrefix + 'grid-drop-indicator', handleNodeDrop:function(data, record, position) {
+  var view = this.view, store = view.getStore(), crossView = view !== data.view, index, records, i, len;
+  if (data.copy) {
+    records = data.records;
+    for (i = 0, len = records.length; i < len; i++) {
+      records[i] = records[i].copy();
+    }
+  } else {
+    if (crossView) {
+      data.view.store.remove(data.records);
+    }
+  }
+  if (record && position) {
+    index = store.indexOf(record);
+    if (position !== 'before') {
+      index++;
+    }
+    store.insert(index, data.records);
+  } else {
+    store.add(data.records);
+  }
+  if (crossView) {
+    view.getSelectionModel().select(data.records);
+  }
+  view.getNavigationModel().setPosition(data.records[0]);
+}});
 Ext.define('Ext.grid.plugin.HeaderResizer', {extend:Ext.plugin.Abstract, alias:'plugin.gridheaderresizer', disabled:false, config:{dynamic:false}, colHeaderCls:Ext.baseCSSPrefix + 'column-header', minColWidth:40, maxColWidth:1000, eResizeCursor:'col-resize', init:function(headerCt) {
   var me = this;
   me.headerCt = headerCt;
@@ -71801,6 +71949,45 @@ Ext.define('Ext.grid.plugin.BufferedRenderer', {extend:Ext.plugin.Abstract, alia
   Ext.destroy(me.viewListeners, me.stretcher, me.gridListeners, me.scrollListeners);
   me.callParent();
 }});
+Ext.define('Ext.grid.plugin.DragDrop', {extend:Ext.plugin.Abstract, alias:'plugin.gridviewdragdrop', dragText:'{0} selected row{1}', ddGroup:'GridDD', enableDrop:true, enableDrag:true, containerScroll:false, init:function(view) {
+  Ext.applyIf(view, {copy:this.copy, allowCopy:this.allowCopy});
+  view.on('render', this.onViewRender, this, {single:true});
+}, destroy:function() {
+  var me = this;
+  me.dragZone = me.dropZone = Ext.destroy(me.dragZone, me.dropZone);
+  me.callParent();
+}, enable:function() {
+  var me = this;
+  if (me.dragZone) {
+    me.dragZone.unlock();
+  }
+  if (me.dropZone) {
+    me.dropZone.unlock();
+  }
+  me.callParent();
+}, disable:function() {
+  var me = this;
+  if (me.dragZone) {
+    me.dragZone.lock();
+  }
+  if (me.dropZone) {
+    me.dropZone.lock();
+  }
+  me.callParent();
+}, onViewRender:function(view) {
+  var me = this, ownerGrid = view.ownerCt.ownerGrid || view.ownerCt, dragZone = me.dragZone || {};
+  ownerGrid.relayEvents(view, ['beforedrop', 'drop']);
+  if (me.enableDrag) {
+    if (me.containerScroll) {
+      dragZone.scrollEl = view.getEl();
+      dragZone.containerScroll = true;
+    }
+    me.dragZone = new Ext.view.DragZone(Ext.apply({view:view, ddGroup:me.dragGroup || me.ddGroup, dragText:me.dragText}, dragZone));
+  }
+  if (me.enableDrop) {
+    me.dropZone = new Ext.grid.ViewDropZone(Ext.apply({view:view, ddGroup:me.dropGroup || me.ddGroup}, me.dropZone));
+  }
+}});
 Ext.define('Ext.util.Queue', {constructor:function() {
   this.clear();
 }, add:function(obj, replace) {
@@ -75293,6 +75480,85 @@ Ext.define('Ext.tab.Panel', {extend:Ext.panel.Panel, alias:'widget.tabpanel', al
 }}});
 Ext.define('Ext.toolbar.Fill', {extend:Ext.Component, alias:'widget.tbfill', alternateClassName:'Ext.Toolbar.Fill', ariaRole:'presentation', isFill:true, flex:1});
 Ext.define('Ext.toolbar.Spacer', {extend:Ext.Component, alias:'widget.tbspacer', alternateClassName:'Ext.Toolbar.Spacer', baseCls:Ext.baseCSSPrefix + 'toolbar-spacer', ariaRole:'presentation'});
+Ext.define('Ext.view.DragZone', {extend:Ext.dd.DragZone, containerScroll:false, constructor:function(config) {
+  var me = this, view, ownerCt, el;
+  Ext.apply(me, config);
+  if (!me.ddGroup) {
+    me.ddGroup = 'view-dd-zone-' + me.view.id;
+  }
+  view = me.view;
+  view.setItemsDraggable(true);
+  ownerCt = view.ownerCt;
+  if (ownerCt) {
+    el = ownerCt.getTargetEl().dom;
+  } else {
+    el = view.el.dom.parentNode;
+  }
+  me.callParent([el]);
+  me.ddel = document.createElement('div');
+  me.ddel.className = Ext.baseCSSPrefix + 'grid-dd-wrap';
+}, init:function(id, sGroup, config) {
+  var me = this, eventSpec = {itemmousedown:me.onItemMouseDown, scope:me};
+  if (Ext.supports.Touch) {
+    eventSpec.itemlongpress = me.onItemLongPress;
+    eventSpec.contextmenu = {element:'el', fn:me.onViewContextMenu};
+  }
+  me.initTarget(id, sGroup, config);
+  me.view.mon(me.view, eventSpec);
+}, onValidDrop:function(target, e, id) {
+  this.callParent([target, e, id]);
+  if (!target.el.contains(Ext.Element.getActiveElement())) {
+    target.el.focus();
+  }
+}, onViewContextMenu:function(e) {
+  if (e.pointerType !== 'mouse') {
+    e.preventDefault();
+  }
+}, onItemMouseDown:function(view, record, item, index, e) {
+  if (e.pointerType === 'mouse') {
+    this.onTriggerGesture(view, record, item, index, e);
+  }
+}, onItemLongPress:function(view, record, item, index, e) {
+  if (e.pointerType !== 'mouse') {
+    this.onTriggerGesture(view, record, item, index, e);
+  }
+}, onTriggerGesture:function(view, record, item, index, e) {
+  var navModel;
+  if (e.pointerType === 'touch' && e.type !== 'longpress' || e.position && e.position.isEqual(e.view.actionPosition)) {
+    return;
+  }
+  if (!this.isPreventDrag(e, record, item, index)) {
+    navModel = view.getNavigationModel();
+    if (e.position) {
+      navModel.setPosition(e.position);
+    } else {
+      navModel.setPosition(index);
+    }
+    this.handleMouseDown(e);
+  }
+}, isPreventDrag:function(e, record, item, index) {
+  return !!e.isInputFieldEvent;
+}, getDragData:function(e) {
+  var view = this.view, item = e.getTarget(view.getItemSelector());
+  if (item) {
+    return {copy:view.copy || view.allowCopy && e.ctrlKey, event:e, view:view, ddel:this.ddel, item:item, records:view.getSelectionModel().getSelection(), fromPosition:Ext.fly(item).getXY()};
+  }
+}, onInitDrag:function(x, y) {
+  var me = this, data = me.dragData, view = data.view, selectionModel = view.getSelectionModel(), record = view.getRecord(data.item);
+  if (!selectionModel.isSelected(record)) {
+    selectionModel.selectWithEvent(record, me.DDMInstance.mousedownEvent);
+  }
+  data.records = selectionModel.getSelection();
+  Ext.fly(me.ddel).setHtml(me.getDragText());
+  me.proxy.update(me.ddel);
+  me.onStartDrag(x, y);
+  return true;
+}, getDragText:function() {
+  var count = this.dragData.records.length;
+  return Ext.String.format(this.dragText, count, count === 1 ? '' : 's');
+}, getRepairXY:function(e, data) {
+  return data ? data.fromPosition : false;
+}});
 Ext.namespace('Ext.theme.is')['basetheme'] = true;
 Ext.theme.name = 'basetheme';
 Ext.namespace('Ext.theme.is')['darktheme'] = true;
