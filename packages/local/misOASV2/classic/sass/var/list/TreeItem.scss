@@ -7,13 +7,13 @@
  */
 $treelist-nav-ui: dynamic((
     padding: 0 10px,
-    background-color: #f2f2f2,
-    toolstrip-background-color: #f2f2f2,
+    background-color: #f4f4f4,
+    toolstrip-background-color: #f4f4f4,
 
     tool-selected-color: #fff,
     tool-selected-background-color: #b00,
     tool-float-indicator-width: 4px,
-    tool-float-indicator-color: #f2f2f2,
+    tool-float-indicator-color: #f4f4f4,
 
     item-line-height: 44px,
 
@@ -26,8 +26,8 @@ $treelist-nav-ui: dynamic((
     item-text-color: #76787a,
     item-text-over-color: #fff,
 
-    item-expanded-background-color: #f2f2f2,
-    item-expanded-child-background-color: #f2f2f2,
+    item-expanded-background-color: #f4f4f4,
+    item-expanded-child-background-color: #f4f4f4,
 
     item-expander-font-size: 13px,
     item-expander-width: 24px,
