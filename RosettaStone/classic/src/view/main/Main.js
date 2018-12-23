@@ -62,19 +62,23 @@ Ext.define('RosettaStone.view.main.Main', {
                 },
                 '->',
                 {
-                    text: 'FAQ'
+                    text: 'FAQ',
+                    ui: 'transparent-button'
                 },
                 '-',
                 {
-                    text: 'Project Wiki'
+                    text: 'Project Wiki',
+                    ui: 'transparent-button'
                 },
                 '-',
                 {
-                    text: 'Issue Tracker'
+                    text: 'Issue Tracker',
+                    ui: 'transparent-button'
                 },
                 '-',
                 {
-                    text: 'Release Notes'
+                    text: 'Release Notes',
+                    ui: 'transparent-button'
                 }
             ]
         },
