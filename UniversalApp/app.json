@@ -33,6 +33,7 @@
         "${toolkit.name}/src"
     ],
 
+    
     /**
      * Comma-separated string with the paths of directories or files to search. Any classes
      * declared in these locations will be automatically required and included in the build.
@@ -214,9 +215,9 @@
     "classic": {
         "js": [
             // Remove this entry to individually load sources from the framework.
-            {
-                "path": "${framework.dir}/build/ext-all-rtl-debug.js"
-            }
+            // {
+            //     "path": "${framework.dir}/build/ext-all-rtl-debug.js"
+            // }
         ]
     },
 
@@ -226,9 +227,9 @@
     "modern": {
         "js": [
             // Remove this entry to individually load sources from the framework.
-            {
-                "path": "${framework.dir}/build/ext-modern-all-debug.js"
-            }
+            // {
+            //     "path": "${framework.dir}/build/ext-modern-all-debug.js"
+            // }
         ]
     },
 
@@ -525,7 +526,7 @@
 
         "modern": {
             "toolkit": "modern",
-            "theme": "theme-material",
+            "theme": "darktheme",
             "sass": {
                 "generated": {
                     "var": "modern/sass/save.scss",

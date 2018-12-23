@@ -6,6 +6,7 @@ Ext.define('UniversalApp.view.user.User', {
     xtype: 'user-list',
 
     requires: [
+        'Ext.grid.plugin.DragDrop',
         'UniversalApp.store.Personnel'
     ],
 

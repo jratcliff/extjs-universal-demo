@@ -9,4 +9,4 @@ Ext.define('UniversalApp.view.common.xtemplates.Example', {
             '<div>jack was here3: {phone}</div>',
         '</div>'
     ].join('')
-})
+});
