@@ -712,13 +712,13 @@
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/packages/core/sass/src/list/TreeItem.scss:495 */
 .x-treelist-nav {
-    background-color: #f2f2f2;
+    background-color: #f4f4f4;
     background-position: 24px 0%;
     padding: 0 0 0 0;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/packages/core/sass/src/list/TreeItem.scss:103 */
 .x-treelist-nav .x-treelist-toolstrip {
-    background-color: #f2f2f2;
+    background-color: #f4f4f4;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/packages/core/sass/src/list/TreeItem.scss:112 */
 .x-treelist-nav .x-treelist-item-selected.x-treelist-item-tool {
@@ -742,7 +742,7 @@
     left: 0;
     content: " ";
     width: 4px;
-    background-color: #f2f2f2;
+    background-color: #f4f4f4;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/packages/core/sass/src/list/TreeItem.scss:166 */
 .x-treelist-nav .x-treelist-item-icon:before,
@@ -799,7 +799,7 @@
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/packages/core/sass/src/list/TreeItem.scss:304 */
 .x-treelist-nav .x-treelist-item-floated > .x-treelist-row {
-    background-color: #f2f2f2;
+    background-color: #f4f4f4;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/packages/core/sass/src/list/TreeItem.scss:308 */
 .x-treelist-nav .x-treelist-item-floated > .x-treelist-container {
@@ -824,7 +824,7 @@
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/packages/core/sass/src/list/TreeItem.scss:330 */
 .x-treelist-nav .x-treelist-item-floated > .x-treelist-row-over {
-    background-color: #f2f2f2;
+    background-color: #f4f4f4;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/packages/core/sass/src/list/TreeItem.scss:333 */
 .x-treelist-nav .x-treelist-item-floated > .x-treelist-row-over > * > .x-treelist-item-text {
@@ -832,11 +832,11 @@
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/packages/core/sass/src/list/TreeItem.scss:339 */
 .x-treelist-nav .x-treelist-item-expanded {
-    background-color: #f2f2f2;
+    background-color: #f4f4f4;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/packages/core/sass/src/list/TreeItem.scss:342 */
 .x-treelist-nav .x-treelist-item-expanded .x-treelist-item {
-    background-color: #f2f2f2;
+    background-color: #f4f4f4;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/packages/core/sass/src/list/TreeItem.scss:357 */
 .x-treelist-nav .x-treelist-highlight-path .x-treelist-item-over > * > * > .x-treelist-item-icon {

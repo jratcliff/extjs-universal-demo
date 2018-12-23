@@ -1463,6 +1463,1347 @@ a.x-btn:active {
 .x-grid-cell-inner-row-numberer {
     color: #000;
 }
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:187 */
+.x-btn-transparent-button-large {
+    -moz-border-radius-topleft: 4px;
+    -webkit-border-top-left-radius: 4px;
+    border-top-left-radius: 4px;
+    -moz-border-radius-topright: 4px;
+    -webkit-border-top-right-radius: 4px;
+    border-top-right-radius: 4px;
+    -moz-border-radius-bottomright: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    -moz-border-radius-bottomleft: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    padding: 5px 7px 5px 7px;
+    border-width: 0px;
+    border-style: solid;
+    background-image: none;
+    background-color: rgba(252, 247, 247, 0.0117647058823529);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:237 */
+.x-btn-transparent-button-large-mc {
+    background-image: url(images/btn/btn-transparent-button-large-fbg.gif);
+    background-position: 0 top;
+    background-color: rgba(252, 247, 247, 0.0117647058823529);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:264 */
+.x-nbr .x-btn-transparent-button-large {
+    padding: 0 !important;
+    border-width: 0 !important;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    border-radius: 0px;
+    background-color: transparent !important;
+    background-image: none;
+    box-shadow: none !important;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:281 */
+.x-btn-transparent-button-large-frameInfo {
+    font-family: th-5-5-5-5-0-0-0-0-5-7-5-7;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:347 */
+.x-btn-transparent-button-large-tl {
+    background-position: 0 -10px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:351 */
+.x-btn-transparent-button-large-tr {
+    background-position: right -15px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:355 */
+.x-btn-transparent-button-large-bl {
+    background-position: 0 -20px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:359 */
+.x-btn-transparent-button-large-br {
+    background-position: right -25px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:363 */
+.x-btn-transparent-button-large-ml {
+    background-position: 0 top;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:371 */
+.x-btn-transparent-button-large-mr {
+    background-position: right top;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:379 */
+.x-btn-transparent-button-large-tc {
+    background-position: 0 0;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:383 */
+.x-btn-transparent-button-large-bc {
+    background-position: 0 -5px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:388 */
+.x-btn-transparent-button-large-tr,
+.x-btn-transparent-button-large-br,
+.x-btn-transparent-button-large-mr {
+    padding-right: 5px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:394 */
+.x-btn-transparent-button-large-tl,
+.x-btn-transparent-button-large-bl,
+.x-btn-transparent-button-large-ml {
+    padding-left: 5px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:400 */
+.x-btn-transparent-button-large-tc {
+    height: 5px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:403 */
+.x-btn-transparent-button-large-bc {
+    height: 5px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:407 */
+.x-btn-transparent-button-large-tl,
+.x-btn-transparent-button-large-bl,
+.x-btn-transparent-button-large-tr,
+.x-btn-transparent-button-large-br,
+.x-btn-transparent-button-large-tc,
+.x-btn-transparent-button-large-bc,
+.x-btn-transparent-button-large-ml,
+.x-btn-transparent-button-large-mr {
+    background-image: url(images/btn/btn-transparent-button-large-corners.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:453 */
+.x-btn-transparent-button-large-ml,
+.x-btn-transparent-button-large-mr {
+    background-image: url(images/btn/btn-transparent-button-large-sides.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:464 */
+.x-btn-transparent-button-large-mc {
+    padding: 0px 2px 0px 2px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2463 */
+.x-btn-transparent-button-large {
+    border-color: #fcf7f7;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2470 */
+.x-btn-button-transparent-button-large {
+    min-height: 36px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2475 */
+.x-ie9m .x-btn-button-transparent-button-large {
+    min-height: auto;
+    height: 36px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2482 */
+.x-btn-inner-transparent-button-large {
+    font: 700 18px/36px 'Open Sans', sans-serif;
+    color: #76787a;
+    padding: 0 4px;
+    max-width: 100%;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2502 */
+.x-ie9 .x-btn-icon-right > .x-btn-inner-transparent-button-large,
+.x-ie9 .x-btn-icon-left > .x-btn-inner-transparent-button-large {
+    max-width: calc(100% - 30px);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2510 */
+.x-safari8m .x-btn-icon-right > .x-btn-inner-transparent-button-large,
+.x-safari8m .x-btn-icon-left > .x-btn-inner-transparent-button-large {
+    max-width: calc(100% - 29px);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2516 */
+.x-ie10p .x-btn-inner-transparent-button-large {
+    max-width: none;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2521 */
+.x-btn-icon-el-transparent-button-large {
+    font-size: 30px;
+    height: 30px;
+    color: #333;
+    line-height: 30px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2527 */
+.x-btn-icon-left > .x-btn-icon-el-transparent-button-large,
+.x-btn-icon-right > .x-btn-icon-el-transparent-button-large {
+    width: 30px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2532 */
+.x-btn-icon-top > .x-btn-icon-el-transparent-button-large,
+.x-btn-icon-bottom > .x-btn-icon-el-transparent-button-large {
+    min-width: 30px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2554 */
+.x-ie8 .x-btn-icon-el-transparent-button-large.x-btn-glyph {
+    color: #333;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2561 */
+.x-btn-text.x-btn-icon-left > .x-btn-icon-el-transparent-button-large {
+    margin-right: 4px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2572 */
+.x-btn-text.x-btn-icon-right > .x-btn-icon-el-transparent-button-large {
+    margin-left: 4px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2583 */
+.x-btn-text.x-btn-icon-top > .x-btn-icon-el-transparent-button-large {
+    margin-bottom: 8px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2587 */
+.x-btn-text.x-btn-icon-bottom > .x-btn-icon-el-transparent-button-large {
+    margin-top: 8px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2593 */
+.x-btn-arrow-right > .x-btn-icon.x-btn-no-text.x-btn-button-transparent-button-large {
+    padding-right: 8px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2596 */
+.x-btn-arrow-right > .x-btn-text.x-btn-icon-right > .x-btn-icon-el-transparent-button-large {
+    margin-right: 4px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2603 */
+.x-btn-arrow-bottom > .x-btn-button-transparent-button-large,
+.x-btn-split-bottom > .x-btn-button-transparent-button-large {
+    padding-bottom: 1px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2609 */
+.x-btn-wrap-transparent-button-large.x-btn-arrow-right:after {
+    width: 22px;
+    content: "\f0d7";
+    font: 24px/1 FontAwesome;
+    color: #f0f0f0;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2636 */
+.x-btn-wrap-transparent-button-large.x-btn-arrow-bottom:after {
+    height: 16px;
+    content: "\f0d7";
+    font: 24px/16px FontAwesome;
+    color: #f0f0f0;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2663 */
+.x-btn-wrap-transparent-button-large.x-btn-split-right > .x-btn-button {
+    padding-right: 7px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2671 */
+.x-btn-wrap-transparent-button-large.x-btn-split-right > .x-btn-button:after {
+    border-right: 1px solid #f0f0f0;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2676 */
+.x-btn-wrap-transparent-button-large.x-btn-split-right:after {
+    width: 32px;
+    content: "\f0d7";
+    font: 24px/1 FontAwesome;
+    color: #f0f0f0;
+    padding-left: 7px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2702 */
+.x-btn-wrap-transparent-button-large.x-btn-split-bottom {
+    margin-bottom: -1px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2704 */
+.x-btn-wrap-transparent-button-large.x-btn-split-bottom > .x-btn-button:after {
+    border-bottom: 1px solid #f0f0f0;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2715 */
+.x-btn-wrap-transparent-button-large.x-btn-split-bottom:after {
+    height: 28px;
+    content: "\f0d7";
+    font: 24px/28px FontAwesome;
+    color: #f0f0f0;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2748 */
+.x-btn-split-right > .x-btn-icon.x-btn-no-text.x-btn-button-transparent-button-large {
+    padding-right: 8px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2751 */
+.x-btn-split-right > .x-btn-text.x-btn-icon-right > .x-btn-icon-el-transparent-button-large {
+    margin-right: 4px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2757 */
+.x-keyboard-mode .x-btn-focus.x-btn-transparent-button-large {
+    background-image: none;
+    background-color: rgba(252, 247, 247, 0);
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2793 */
+.x-btn-transparent-button-large .x-btn-arrow-el {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 39px;
+    pointer-events: none;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2810 */
+.x-keyboard-mode .x-btn-transparent-button-large.x-arrow-focus .x-btn-arrow-el {
+    border: 0px solid #fcf7f7;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2817 */
+.x-btn-over.x-btn-transparent-button-large {
+    border-color: rgba(252, 247, 247, 0);
+    background-image: none;
+    background-color: rgba(252, 247, 247, 0);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2845 */
+.x-keyboard-mode .x-btn-focus.x-btn-over.x-btn-transparent-button-large {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2874 */
+.x-btn.x-btn-menu-active.x-btn-transparent-button-large,
+.x-btn.x-btn-pressed.x-btn-transparent-button-large {
+    border-color: #bdb9b9;
+    background-image: none;
+    background-color: rgba(4, 4, 4, 0.2588235294117647);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2904 */
+.x-keyboard-mode .x-btn-focus.x-btn-menu-active.x-btn-transparent-button-large,
+.x-keyboard-mode .x-btn-focus.x-btn-pressed.x-btn-transparent-button-large {
+    background-image: none;
+    background-color: rgba(252, 247, 247, 0);
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2933 */
+.x-btn.x-btn-disabled.x-btn-transparent-button-large {
+    background-image: none;
+    background-color: rgba(252, 247, 247, 0);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2966 */
+.x-keyboard-mode .x-btn-focus .x-btn-transparent-button-large-tl,
+.x-keyboard-mode .x-btn-focus .x-btn-transparent-button-large-bl,
+.x-keyboard-mode .x-btn-focus .x-btn-transparent-button-large-tr,
+.x-keyboard-mode .x-btn-focus .x-btn-transparent-button-large-br,
+.x-keyboard-mode .x-btn-focus .x-btn-transparent-button-large-tc,
+.x-keyboard-mode .x-btn-focus .x-btn-transparent-button-large-bc {
+    background-image: url(images/btn/btn-transparent-button-large-focus-corners.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2974 */
+.x-keyboard-mode .x-btn-focus .x-btn-transparent-button-large-ml,
+.x-keyboard-mode .x-btn-focus .x-btn-transparent-button-large-mr {
+    background-image: url(images/btn/btn-transparent-button-large-focus-sides.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2978 */
+.x-keyboard-mode .x-btn-focus .x-btn-transparent-button-large-mc {
+    background-color: rgba(252, 247, 247, 0);
+    background-image: url(images/btn/btn-transparent-button-large-focus-fbg.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2991 */
+.x-btn-over .x-btn-transparent-button-large-tl,
+.x-btn-over .x-btn-transparent-button-large-bl,
+.x-btn-over .x-btn-transparent-button-large-tr,
+.x-btn-over .x-btn-transparent-button-large-br,
+.x-btn-over .x-btn-transparent-button-large-tc,
+.x-btn-over .x-btn-transparent-button-large-bc {
+    background-image: url(images/btn/btn-transparent-button-large-over-corners.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2999 */
+.x-btn-over .x-btn-transparent-button-large-ml,
+.x-btn-over .x-btn-transparent-button-large-mr {
+    background-image: url(images/btn/btn-transparent-button-large-over-sides.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:3003 */
+.x-btn-over .x-btn-transparent-button-large-mc {
+    background-color: rgba(252, 247, 247, 0);
+    background-image: url(images/btn/btn-transparent-button-large-over-fbg.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:3016 */
+.x-keyboard-mode .x-btn-focus.x-btn-over .x-btn-transparent-button-large-tl,
+.x-keyboard-mode .x-btn-focus.x-btn-over .x-btn-transparent-button-large-bl,
+.x-keyboard-mode .x-btn-focus.x-btn-over .x-btn-transparent-button-large-tr,
+.x-keyboard-mode .x-btn-focus.x-btn-over .x-btn-transparent-button-large-br,
+.x-keyboard-mode .x-btn-focus.x-btn-over .x-btn-transparent-button-large-tc,
+.x-keyboard-mode .x-btn-focus.x-btn-over .x-btn-transparent-button-large-bc {
+    background-image: url(images/btn/btn-transparent-button-large-focus-over-corners.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:3024 */
+.x-keyboard-mode .x-btn-focus.x-btn-over .x-btn-transparent-button-large-ml,
+.x-keyboard-mode .x-btn-focus.x-btn-over .x-btn-transparent-button-large-mr {
+    background-image: url(images/btn/btn-transparent-button-large-focus-over-sides.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:3028 */
+.x-keyboard-mode .x-btn-focus.x-btn-over .x-btn-transparent-button-large-mc {
+    background-color: rgba(252, 247, 247, 0);
+    background-image: url(images/btn/btn-transparent-button-large-focus-over-fbg.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:3043 */
+.x-btn.x-btn-menu-active .x-btn-transparent-button-large-tl,
+.x-btn.x-btn-menu-active .x-btn-transparent-button-large-bl,
+.x-btn.x-btn-menu-active .x-btn-transparent-button-large-tr,
+.x-btn.x-btn-menu-active .x-btn-transparent-button-large-br,
+.x-btn.x-btn-menu-active .x-btn-transparent-button-large-tc,
+.x-btn.x-btn-menu-active .x-btn-transparent-button-large-bc,
+.x-btn.x-btn-pressed .x-btn-transparent-button-large-tl,
+.x-btn.x-btn-pressed .x-btn-transparent-button-large-bl,
+.x-btn.x-btn-pressed .x-btn-transparent-button-large-tr,
+.x-btn.x-btn-pressed .x-btn-transparent-button-large-br,
+.x-btn.x-btn-pressed .x-btn-transparent-button-large-tc,
+.x-btn.x-btn-pressed .x-btn-transparent-button-large-bc {
+    background-image: url(images/btn/btn-transparent-button-large-pressed-corners.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:3051 */
+.x-btn.x-btn-menu-active .x-btn-transparent-button-large-ml,
+.x-btn.x-btn-menu-active .x-btn-transparent-button-large-mr,
+.x-btn.x-btn-pressed .x-btn-transparent-button-large-ml,
+.x-btn.x-btn-pressed .x-btn-transparent-button-large-mr {
+    background-image: url(images/btn/btn-transparent-button-large-pressed-sides.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:3055 */
+.x-btn.x-btn-menu-active .x-btn-transparent-button-large-mc,
+.x-btn.x-btn-pressed .x-btn-transparent-button-large-mc {
+    background-color: rgba(4, 4, 4, 0.2588235294117647);
+    background-image: url(images/btn/btn-transparent-button-large-pressed-fbg.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:3069 */
+.x-keyboard-mode .x-btn-focus.x-btn-menu-active .x-btn-transparent-button-large-tl,
+.x-keyboard-mode .x-btn-focus.x-btn-menu-active .x-btn-transparent-button-large-bl,
+.x-keyboard-mode .x-btn-focus.x-btn-menu-active .x-btn-transparent-button-large-tr,
+.x-keyboard-mode .x-btn-focus.x-btn-menu-active .x-btn-transparent-button-large-br,
+.x-keyboard-mode .x-btn-focus.x-btn-menu-active .x-btn-transparent-button-large-tc,
+.x-keyboard-mode .x-btn-focus.x-btn-menu-active .x-btn-transparent-button-large-bc,
+.x-keyboard-mode .x-btn-focus.x-btn-pressed .x-btn-transparent-button-large-tl,
+.x-keyboard-mode .x-btn-focus.x-btn-pressed .x-btn-transparent-button-large-bl,
+.x-keyboard-mode .x-btn-focus.x-btn-pressed .x-btn-transparent-button-large-tr,
+.x-keyboard-mode .x-btn-focus.x-btn-pressed .x-btn-transparent-button-large-br,
+.x-keyboard-mode .x-btn-focus.x-btn-pressed .x-btn-transparent-button-large-tc,
+.x-keyboard-mode .x-btn-focus.x-btn-pressed .x-btn-transparent-button-large-bc {
+    background-image: url(images/btn/btn-transparent-button-large-focus-pressed-corners.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:3077 */
+.x-keyboard-mode .x-btn-focus.x-btn-menu-active .x-btn-transparent-button-large-ml,
+.x-keyboard-mode .x-btn-focus.x-btn-menu-active .x-btn-transparent-button-large-mr,
+.x-keyboard-mode .x-btn-focus.x-btn-pressed .x-btn-transparent-button-large-ml,
+.x-keyboard-mode .x-btn-focus.x-btn-pressed .x-btn-transparent-button-large-mr {
+    background-image: url(images/btn/btn-transparent-button-large-focus-pressed-sides.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:3081 */
+.x-keyboard-mode .x-btn-focus.x-btn-menu-active .x-btn-transparent-button-large-mc,
+.x-keyboard-mode .x-btn-focus.x-btn-pressed .x-btn-transparent-button-large-mc {
+    background-color: rgba(252, 247, 247, 0);
+    background-image: url(images/btn/btn-transparent-button-large-focus-pressed-fbg.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:3095 */
+.x-btn.x-btn-disabled .x-btn-transparent-button-large-tl,
+.x-btn.x-btn-disabled .x-btn-transparent-button-large-bl,
+.x-btn.x-btn-disabled .x-btn-transparent-button-large-tr,
+.x-btn.x-btn-disabled .x-btn-transparent-button-large-br,
+.x-btn.x-btn-disabled .x-btn-transparent-button-large-tc,
+.x-btn.x-btn-disabled .x-btn-transparent-button-large-bc {
+    background-image: url(images/btn/btn-transparent-button-large-disabled-corners.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:3103 */
+.x-btn.x-btn-disabled .x-btn-transparent-button-large-ml,
+.x-btn.x-btn-disabled .x-btn-transparent-button-large-mr {
+    background-image: url(images/btn/btn-transparent-button-large-disabled-sides.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:3107 */
+.x-btn.x-btn-disabled .x-btn-transparent-button-large-mc {
+    background-color: rgba(252, 247, 247, 0);
+    background-image: url(images/btn/btn-transparent-button-large-disabled-fbg.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:3117 */
+.x-nbr .x-btn-transparent-button-large {
+    background-image: none;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:3123 */
+.x-btn-disabled.x-btn-transparent-button-large {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    opacity: 0.3;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:187 */
+.x-btn-transparent-button-small {
+    -moz-border-radius-topleft: 4px;
+    -webkit-border-top-left-radius: 4px;
+    border-top-left-radius: 4px;
+    -moz-border-radius-topright: 4px;
+    -webkit-border-top-right-radius: 4px;
+    border-top-right-radius: 4px;
+    -moz-border-radius-bottomright: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    -moz-border-radius-bottomleft: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    padding: 4px 7px 4px 7px;
+    border-width: 0px;
+    border-style: solid;
+    background-image: none;
+    background-color: rgba(252, 247, 247, 0.0117647058823529);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:237 */
+.x-btn-transparent-button-small-mc {
+    background-image: url(images/btn/btn-transparent-button-small-fbg.gif);
+    background-position: 0 top;
+    background-color: rgba(252, 247, 247, 0.0117647058823529);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:264 */
+.x-nbr .x-btn-transparent-button-small {
+    padding: 0 !important;
+    border-width: 0 !important;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    border-radius: 0px;
+    background-color: transparent !important;
+    background-image: none;
+    box-shadow: none !important;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:281 */
+.x-btn-transparent-button-small-frameInfo {
+    font-family: th-4-4-4-4-0-0-0-0-4-7-4-7;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:347 */
+.x-btn-transparent-button-small-tl {
+    background-position: 0 -8px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:351 */
+.x-btn-transparent-button-small-tr {
+    background-position: right -12px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:355 */
+.x-btn-transparent-button-small-bl {
+    background-position: 0 -16px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:359 */
+.x-btn-transparent-button-small-br {
+    background-position: right -20px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:363 */
+.x-btn-transparent-button-small-ml {
+    background-position: 0 top;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:371 */
+.x-btn-transparent-button-small-mr {
+    background-position: right top;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:379 */
+.x-btn-transparent-button-small-tc {
+    background-position: 0 0;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:383 */
+.x-btn-transparent-button-small-bc {
+    background-position: 0 -4px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:388 */
+.x-btn-transparent-button-small-tr,
+.x-btn-transparent-button-small-br,
+.x-btn-transparent-button-small-mr {
+    padding-right: 4px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:394 */
+.x-btn-transparent-button-small-tl,
+.x-btn-transparent-button-small-bl,
+.x-btn-transparent-button-small-ml {
+    padding-left: 4px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:400 */
+.x-btn-transparent-button-small-tc {
+    height: 4px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:403 */
+.x-btn-transparent-button-small-bc {
+    height: 4px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:407 */
+.x-btn-transparent-button-small-tl,
+.x-btn-transparent-button-small-bl,
+.x-btn-transparent-button-small-tr,
+.x-btn-transparent-button-small-br,
+.x-btn-transparent-button-small-tc,
+.x-btn-transparent-button-small-bc,
+.x-btn-transparent-button-small-ml,
+.x-btn-transparent-button-small-mr {
+    background-image: url(images/btn/btn-transparent-button-small-corners.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:453 */
+.x-btn-transparent-button-small-ml,
+.x-btn-transparent-button-small-mr {
+    background-image: url(images/btn/btn-transparent-button-small-sides.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:464 */
+.x-btn-transparent-button-small-mc {
+    padding: 0px 3px 0px 3px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2463 */
+.x-btn-transparent-button-small {
+    border-color: #fcf7f7;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2470 */
+.x-btn-button-transparent-button-small {
+    min-height: 30px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2475 */
+.x-ie9m .x-btn-button-transparent-button-small {
+    min-height: auto;
+    height: 30px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2482 */
+.x-btn-inner-transparent-button-small {
+    font: 700 12px/30px 'Open Sans', sans-serif;
+    color: #76787a;
+    padding: 0 4px;
+    max-width: 100%;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2502 */
+.x-ie9 .x-btn-icon-right > .x-btn-inner-transparent-button-small,
+.x-ie9 .x-btn-icon-left > .x-btn-inner-transparent-button-small {
+    max-width: calc(100% - 18px);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2510 */
+.x-safari8m .x-btn-icon-right > .x-btn-inner-transparent-button-small,
+.x-safari8m .x-btn-icon-left > .x-btn-inner-transparent-button-small {
+    max-width: calc(100% - 17px);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2516 */
+.x-ie10p .x-btn-inner-transparent-button-small {
+    max-width: none;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2521 */
+.x-btn-icon-el-transparent-button-small {
+    font-size: 18px;
+    height: 18px;
+    color: #333;
+    line-height: 18px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2527 */
+.x-btn-icon-left > .x-btn-icon-el-transparent-button-small,
+.x-btn-icon-right > .x-btn-icon-el-transparent-button-small {
+    width: 18px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2532 */
+.x-btn-icon-top > .x-btn-icon-el-transparent-button-small,
+.x-btn-icon-bottom > .x-btn-icon-el-transparent-button-small {
+    min-width: 18px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2554 */
+.x-ie8 .x-btn-icon-el-transparent-button-small.x-btn-glyph {
+    color: #333;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2561 */
+.x-btn-text.x-btn-icon-left > .x-btn-icon-el-transparent-button-small {
+    margin-right: 4px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2572 */
+.x-btn-text.x-btn-icon-right > .x-btn-icon-el-transparent-button-small {
+    margin-left: 4px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2583 */
+.x-btn-text.x-btn-icon-top > .x-btn-icon-el-transparent-button-small {
+    margin-bottom: 8px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2587 */
+.x-btn-text.x-btn-icon-bottom > .x-btn-icon-el-transparent-button-small {
+    margin-top: 8px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2593 */
+.x-btn-arrow-right > .x-btn-icon.x-btn-no-text.x-btn-button-transparent-button-small {
+    padding-right: 8px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2596 */
+.x-btn-arrow-right > .x-btn-text.x-btn-icon-right > .x-btn-icon-el-transparent-button-small {
+    margin-right: 4px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2603 */
+.x-btn-arrow-bottom > .x-btn-button-transparent-button-small,
+.x-btn-split-bottom > .x-btn-button-transparent-button-small {
+    padding-bottom: 1px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2609 */
+.x-btn-wrap-transparent-button-small.x-btn-arrow-right:after {
+    width: 18px;
+    content: "\f0d7";
+    font: 16px/1 FontAwesome;
+    color: #f0f0f0;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2636 */
+.x-btn-wrap-transparent-button-small.x-btn-arrow-bottom:after {
+    height: 12px;
+    content: "\f0d7";
+    font: 16px/12px FontAwesome;
+    color: #f0f0f0;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2663 */
+.x-btn-wrap-transparent-button-small.x-btn-split-right > .x-btn-button {
+    padding-right: 7px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2671 */
+.x-btn-wrap-transparent-button-small.x-btn-split-right > .x-btn-button:after {
+    border-right: 1px solid #f0f0f0;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2676 */
+.x-btn-wrap-transparent-button-small.x-btn-split-right:after {
+    width: 20px;
+    content: "\f0d7";
+    font: 16px/1 FontAwesome;
+    color: #f0f0f0;
+    padding-left: 7px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2702 */
+.x-btn-wrap-transparent-button-small.x-btn-split-bottom {
+    margin-bottom: -1px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2704 */
+.x-btn-wrap-transparent-button-small.x-btn-split-bottom > .x-btn-button:after {
+    border-bottom: 1px solid #f0f0f0;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2715 */
+.x-btn-wrap-transparent-button-small.x-btn-split-bottom:after {
+    height: 20px;
+    content: "\f0d7";
+    font: 16px/20px FontAwesome;
+    color: #f0f0f0;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2748 */
+.x-btn-split-right > .x-btn-icon.x-btn-no-text.x-btn-button-transparent-button-small {
+    padding-right: 8px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2751 */
+.x-btn-split-right > .x-btn-text.x-btn-icon-right > .x-btn-icon-el-transparent-button-small {
+    margin-right: 4px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2757 */
+.x-keyboard-mode .x-btn-focus.x-btn-transparent-button-small {
+    background-image: none;
+    background-color: rgba(252, 247, 247, 0);
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2793 */
+.x-btn-transparent-button-small .x-btn-arrow-el {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 27px;
+    pointer-events: none;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2810 */
+.x-keyboard-mode .x-btn-transparent-button-small.x-arrow-focus .x-btn-arrow-el {
+    border: 0px solid #fcf7f7;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2817 */
+.x-btn-over.x-btn-transparent-button-small {
+    border-color: rgba(252, 247, 247, 0);
+    background-image: none;
+    background-color: rgba(252, 247, 247, 0);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2845 */
+.x-keyboard-mode .x-btn-focus.x-btn-over.x-btn-transparent-button-small {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2874 */
+.x-btn.x-btn-menu-active.x-btn-transparent-button-small,
+.x-btn.x-btn-pressed.x-btn-transparent-button-small {
+    border-color: #bdb9b9;
+    background-image: none;
+    background-color: rgba(4, 4, 4, 0.2588235294117647);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2904 */
+.x-keyboard-mode .x-btn-focus.x-btn-menu-active.x-btn-transparent-button-small,
+.x-keyboard-mode .x-btn-focus.x-btn-pressed.x-btn-transparent-button-small {
+    background-image: none;
+    background-color: rgba(252, 247, 247, 0);
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2933 */
+.x-btn.x-btn-disabled.x-btn-transparent-button-small {
+    background-image: none;
+    background-color: rgba(252, 247, 247, 0);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2966 */
+.x-keyboard-mode .x-btn-focus .x-btn-transparent-button-small-tl,
+.x-keyboard-mode .x-btn-focus .x-btn-transparent-button-small-bl,
+.x-keyboard-mode .x-btn-focus .x-btn-transparent-button-small-tr,
+.x-keyboard-mode .x-btn-focus .x-btn-transparent-button-small-br,
+.x-keyboard-mode .x-btn-focus .x-btn-transparent-button-small-tc,
+.x-keyboard-mode .x-btn-focus .x-btn-transparent-button-small-bc {
+    background-image: url(images/btn/btn-transparent-button-small-focus-corners.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2974 */
+.x-keyboard-mode .x-btn-focus .x-btn-transparent-button-small-ml,
+.x-keyboard-mode .x-btn-focus .x-btn-transparent-button-small-mr {
+    background-image: url(images/btn/btn-transparent-button-small-focus-sides.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2978 */
+.x-keyboard-mode .x-btn-focus .x-btn-transparent-button-small-mc {
+    background-color: rgba(252, 247, 247, 0);
+    background-image: url(images/btn/btn-transparent-button-small-focus-fbg.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2991 */
+.x-btn-over .x-btn-transparent-button-small-tl,
+.x-btn-over .x-btn-transparent-button-small-bl,
+.x-btn-over .x-btn-transparent-button-small-tr,
+.x-btn-over .x-btn-transparent-button-small-br,
+.x-btn-over .x-btn-transparent-button-small-tc,
+.x-btn-over .x-btn-transparent-button-small-bc {
+    background-image: url(images/btn/btn-transparent-button-small-over-corners.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2999 */
+.x-btn-over .x-btn-transparent-button-small-ml,
+.x-btn-over .x-btn-transparent-button-small-mr {
+    background-image: url(images/btn/btn-transparent-button-small-over-sides.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:3003 */
+.x-btn-over .x-btn-transparent-button-small-mc {
+    background-color: rgba(252, 247, 247, 0);
+    background-image: url(images/btn/btn-transparent-button-small-over-fbg.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:3016 */
+.x-keyboard-mode .x-btn-focus.x-btn-over .x-btn-transparent-button-small-tl,
+.x-keyboard-mode .x-btn-focus.x-btn-over .x-btn-transparent-button-small-bl,
+.x-keyboard-mode .x-btn-focus.x-btn-over .x-btn-transparent-button-small-tr,
+.x-keyboard-mode .x-btn-focus.x-btn-over .x-btn-transparent-button-small-br,
+.x-keyboard-mode .x-btn-focus.x-btn-over .x-btn-transparent-button-small-tc,
+.x-keyboard-mode .x-btn-focus.x-btn-over .x-btn-transparent-button-small-bc {
+    background-image: url(images/btn/btn-transparent-button-small-focus-over-corners.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:3024 */
+.x-keyboard-mode .x-btn-focus.x-btn-over .x-btn-transparent-button-small-ml,
+.x-keyboard-mode .x-btn-focus.x-btn-over .x-btn-transparent-button-small-mr {
+    background-image: url(images/btn/btn-transparent-button-small-focus-over-sides.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:3028 */
+.x-keyboard-mode .x-btn-focus.x-btn-over .x-btn-transparent-button-small-mc {
+    background-color: rgba(252, 247, 247, 0);
+    background-image: url(images/btn/btn-transparent-button-small-focus-over-fbg.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:3043 */
+.x-btn.x-btn-menu-active .x-btn-transparent-button-small-tl,
+.x-btn.x-btn-menu-active .x-btn-transparent-button-small-bl,
+.x-btn.x-btn-menu-active .x-btn-transparent-button-small-tr,
+.x-btn.x-btn-menu-active .x-btn-transparent-button-small-br,
+.x-btn.x-btn-menu-active .x-btn-transparent-button-small-tc,
+.x-btn.x-btn-menu-active .x-btn-transparent-button-small-bc,
+.x-btn.x-btn-pressed .x-btn-transparent-button-small-tl,
+.x-btn.x-btn-pressed .x-btn-transparent-button-small-bl,
+.x-btn.x-btn-pressed .x-btn-transparent-button-small-tr,
+.x-btn.x-btn-pressed .x-btn-transparent-button-small-br,
+.x-btn.x-btn-pressed .x-btn-transparent-button-small-tc,
+.x-btn.x-btn-pressed .x-btn-transparent-button-small-bc {
+    background-image: url(images/btn/btn-transparent-button-small-pressed-corners.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:3051 */
+.x-btn.x-btn-menu-active .x-btn-transparent-button-small-ml,
+.x-btn.x-btn-menu-active .x-btn-transparent-button-small-mr,
+.x-btn.x-btn-pressed .x-btn-transparent-button-small-ml,
+.x-btn.x-btn-pressed .x-btn-transparent-button-small-mr {
+    background-image: url(images/btn/btn-transparent-button-small-pressed-sides.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:3055 */
+.x-btn.x-btn-menu-active .x-btn-transparent-button-small-mc,
+.x-btn.x-btn-pressed .x-btn-transparent-button-small-mc {
+    background-color: rgba(4, 4, 4, 0.2588235294117647);
+    background-image: url(images/btn/btn-transparent-button-small-pressed-fbg.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:3069 */
+.x-keyboard-mode .x-btn-focus.x-btn-menu-active .x-btn-transparent-button-small-tl,
+.x-keyboard-mode .x-btn-focus.x-btn-menu-active .x-btn-transparent-button-small-bl,
+.x-keyboard-mode .x-btn-focus.x-btn-menu-active .x-btn-transparent-button-small-tr,
+.x-keyboard-mode .x-btn-focus.x-btn-menu-active .x-btn-transparent-button-small-br,
+.x-keyboard-mode .x-btn-focus.x-btn-menu-active .x-btn-transparent-button-small-tc,
+.x-keyboard-mode .x-btn-focus.x-btn-menu-active .x-btn-transparent-button-small-bc,
+.x-keyboard-mode .x-btn-focus.x-btn-pressed .x-btn-transparent-button-small-tl,
+.x-keyboard-mode .x-btn-focus.x-btn-pressed .x-btn-transparent-button-small-bl,
+.x-keyboard-mode .x-btn-focus.x-btn-pressed .x-btn-transparent-button-small-tr,
+.x-keyboard-mode .x-btn-focus.x-btn-pressed .x-btn-transparent-button-small-br,
+.x-keyboard-mode .x-btn-focus.x-btn-pressed .x-btn-transparent-button-small-tc,
+.x-keyboard-mode .x-btn-focus.x-btn-pressed .x-btn-transparent-button-small-bc {
+    background-image: url(images/btn/btn-transparent-button-small-focus-pressed-corners.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:3077 */
+.x-keyboard-mode .x-btn-focus.x-btn-menu-active .x-btn-transparent-button-small-ml,
+.x-keyboard-mode .x-btn-focus.x-btn-menu-active .x-btn-transparent-button-small-mr,
+.x-keyboard-mode .x-btn-focus.x-btn-pressed .x-btn-transparent-button-small-ml,
+.x-keyboard-mode .x-btn-focus.x-btn-pressed .x-btn-transparent-button-small-mr {
+    background-image: url(images/btn/btn-transparent-button-small-focus-pressed-sides.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:3081 */
+.x-keyboard-mode .x-btn-focus.x-btn-menu-active .x-btn-transparent-button-small-mc,
+.x-keyboard-mode .x-btn-focus.x-btn-pressed .x-btn-transparent-button-small-mc {
+    background-color: rgba(252, 247, 247, 0);
+    background-image: url(images/btn/btn-transparent-button-small-focus-pressed-fbg.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:3095 */
+.x-btn.x-btn-disabled .x-btn-transparent-button-small-tl,
+.x-btn.x-btn-disabled .x-btn-transparent-button-small-bl,
+.x-btn.x-btn-disabled .x-btn-transparent-button-small-tr,
+.x-btn.x-btn-disabled .x-btn-transparent-button-small-br,
+.x-btn.x-btn-disabled .x-btn-transparent-button-small-tc,
+.x-btn.x-btn-disabled .x-btn-transparent-button-small-bc {
+    background-image: url(images/btn/btn-transparent-button-small-disabled-corners.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:3103 */
+.x-btn.x-btn-disabled .x-btn-transparent-button-small-ml,
+.x-btn.x-btn-disabled .x-btn-transparent-button-small-mr {
+    background-image: url(images/btn/btn-transparent-button-small-disabled-sides.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:3107 */
+.x-btn.x-btn-disabled .x-btn-transparent-button-small-mc {
+    background-color: rgba(252, 247, 247, 0);
+    background-image: url(images/btn/btn-transparent-button-small-disabled-fbg.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:3117 */
+.x-nbr .x-btn-transparent-button-small {
+    background-image: none;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:3123 */
+.x-btn-disabled.x-btn-transparent-button-small {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    opacity: 0.3;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:187 */
+.x-btn-transparent-button-medium {
+    -moz-border-radius-topleft: 4px;
+    -webkit-border-top-left-radius: 4px;
+    border-top-left-radius: 4px;
+    -moz-border-radius-topright: 4px;
+    -webkit-border-top-right-radius: 4px;
+    border-top-right-radius: 4px;
+    -moz-border-radius-bottomright: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    -moz-border-radius-bottomleft: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    padding: 4px 7px 4px 7px;
+    border-width: 0px;
+    border-style: solid;
+    background-image: none;
+    background-color: rgba(252, 247, 247, 0.0117647058823529);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:237 */
+.x-btn-transparent-button-medium-mc {
+    background-image: url(images/btn/btn-transparent-button-medium-fbg.gif);
+    background-position: 0 top;
+    background-color: rgba(252, 247, 247, 0.0117647058823529);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:264 */
+.x-nbr .x-btn-transparent-button-medium {
+    padding: 0 !important;
+    border-width: 0 !important;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    border-radius: 0px;
+    background-color: transparent !important;
+    background-image: none;
+    box-shadow: none !important;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:281 */
+.x-btn-transparent-button-medium-frameInfo {
+    font-family: th-4-4-4-4-0-0-0-0-4-7-4-7;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:347 */
+.x-btn-transparent-button-medium-tl {
+    background-position: 0 -8px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:351 */
+.x-btn-transparent-button-medium-tr {
+    background-position: right -12px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:355 */
+.x-btn-transparent-button-medium-bl {
+    background-position: 0 -16px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:359 */
+.x-btn-transparent-button-medium-br {
+    background-position: right -20px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:363 */
+.x-btn-transparent-button-medium-ml {
+    background-position: 0 top;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:371 */
+.x-btn-transparent-button-medium-mr {
+    background-position: right top;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:379 */
+.x-btn-transparent-button-medium-tc {
+    background-position: 0 0;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:383 */
+.x-btn-transparent-button-medium-bc {
+    background-position: 0 -4px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:388 */
+.x-btn-transparent-button-medium-tr,
+.x-btn-transparent-button-medium-br,
+.x-btn-transparent-button-medium-mr {
+    padding-right: 4px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:394 */
+.x-btn-transparent-button-medium-tl,
+.x-btn-transparent-button-medium-bl,
+.x-btn-transparent-button-medium-ml {
+    padding-left: 4px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:400 */
+.x-btn-transparent-button-medium-tc {
+    height: 4px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:403 */
+.x-btn-transparent-button-medium-bc {
+    height: 4px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:407 */
+.x-btn-transparent-button-medium-tl,
+.x-btn-transparent-button-medium-bl,
+.x-btn-transparent-button-medium-tr,
+.x-btn-transparent-button-medium-br,
+.x-btn-transparent-button-medium-tc,
+.x-btn-transparent-button-medium-bc,
+.x-btn-transparent-button-medium-ml,
+.x-btn-transparent-button-medium-mr {
+    background-image: url(images/btn/btn-transparent-button-medium-corners.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:453 */
+.x-btn-transparent-button-medium-ml,
+.x-btn-transparent-button-medium-mr {
+    background-image: url(images/btn/btn-transparent-button-medium-sides.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:464 */
+.x-btn-transparent-button-medium-mc {
+    padding: 0px 3px 0px 3px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2463 */
+.x-btn-transparent-button-medium {
+    border-color: #fcf7f7;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2470 */
+.x-btn-button-transparent-button-medium {
+    min-height: 32px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2475 */
+.x-ie9m .x-btn-button-transparent-button-medium {
+    min-height: auto;
+    height: 32px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2482 */
+.x-btn-inner-transparent-button-medium {
+    font: 700 13px/32px 'Open Sans', sans-serif;
+    color: #76787a;
+    padding: 0 4px;
+    max-width: 100%;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2502 */
+.x-ie9 .x-btn-icon-right > .x-btn-inner-transparent-button-medium,
+.x-ie9 .x-btn-icon-left > .x-btn-inner-transparent-button-medium {
+    max-width: calc(100% - 24px);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2510 */
+.x-safari8m .x-btn-icon-right > .x-btn-inner-transparent-button-medium,
+.x-safari8m .x-btn-icon-left > .x-btn-inner-transparent-button-medium {
+    max-width: calc(100% - 23px);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2516 */
+.x-ie10p .x-btn-inner-transparent-button-medium {
+    max-width: none;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2521 */
+.x-btn-icon-el-transparent-button-medium {
+    font-size: 24px;
+    height: 24px;
+    color: #333;
+    line-height: 24px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2527 */
+.x-btn-icon-left > .x-btn-icon-el-transparent-button-medium,
+.x-btn-icon-right > .x-btn-icon-el-transparent-button-medium {
+    width: 24px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2532 */
+.x-btn-icon-top > .x-btn-icon-el-transparent-button-medium,
+.x-btn-icon-bottom > .x-btn-icon-el-transparent-button-medium {
+    min-width: 24px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2554 */
+.x-ie8 .x-btn-icon-el-transparent-button-medium.x-btn-glyph {
+    color: #333;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2561 */
+.x-btn-text.x-btn-icon-left > .x-btn-icon-el-transparent-button-medium {
+    margin-right: 4px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2572 */
+.x-btn-text.x-btn-icon-right > .x-btn-icon-el-transparent-button-medium {
+    margin-left: 4px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2583 */
+.x-btn-text.x-btn-icon-top > .x-btn-icon-el-transparent-button-medium {
+    margin-bottom: 8px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2587 */
+.x-btn-text.x-btn-icon-bottom > .x-btn-icon-el-transparent-button-medium {
+    margin-top: 8px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2593 */
+.x-btn-arrow-right > .x-btn-icon.x-btn-no-text.x-btn-button-transparent-button-medium {
+    padding-right: 8px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2596 */
+.x-btn-arrow-right > .x-btn-text.x-btn-icon-right > .x-btn-icon-el-transparent-button-medium {
+    margin-right: 4px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2603 */
+.x-btn-arrow-bottom > .x-btn-button-transparent-button-medium,
+.x-btn-split-bottom > .x-btn-button-transparent-button-medium {
+    padding-bottom: 1px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2609 */
+.x-btn-wrap-transparent-button-medium.x-btn-arrow-right:after {
+    width: 20px;
+    content: "\f0d7";
+    font: 20px/1 FontAwesome;
+    color: #f0f0f0;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2636 */
+.x-btn-wrap-transparent-button-medium.x-btn-arrow-bottom:after {
+    height: 14px;
+    content: "\f0d7";
+    font: 20px/14px FontAwesome;
+    color: #f0f0f0;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2663 */
+.x-btn-wrap-transparent-button-medium.x-btn-split-right > .x-btn-button {
+    padding-right: 7px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2671 */
+.x-btn-wrap-transparent-button-medium.x-btn-split-right > .x-btn-button:after {
+    border-right: 1px solid #f0f0f0;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2676 */
+.x-btn-wrap-transparent-button-medium.x-btn-split-right:after {
+    width: 26px;
+    content: "\f0d7";
+    font: 20px/1 FontAwesome;
+    color: #f0f0f0;
+    padding-left: 7px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2702 */
+.x-btn-wrap-transparent-button-medium.x-btn-split-bottom {
+    margin-bottom: -1px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2704 */
+.x-btn-wrap-transparent-button-medium.x-btn-split-bottom > .x-btn-button:after {
+    border-bottom: 1px solid #f0f0f0;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2715 */
+.x-btn-wrap-transparent-button-medium.x-btn-split-bottom:after {
+    height: 24px;
+    content: "\f0d7";
+    font: 20px/24px FontAwesome;
+    color: #f0f0f0;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2748 */
+.x-btn-split-right > .x-btn-icon.x-btn-no-text.x-btn-button-transparent-button-medium {
+    padding-right: 8px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2751 */
+.x-btn-split-right > .x-btn-text.x-btn-icon-right > .x-btn-icon-el-transparent-button-medium {
+    margin-right: 4px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2757 */
+.x-keyboard-mode .x-btn-focus.x-btn-transparent-button-medium {
+    background-image: none;
+    background-color: rgba(252, 247, 247, 0);
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2793 */
+.x-btn-transparent-button-medium .x-btn-arrow-el {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 33px;
+    pointer-events: none;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2810 */
+.x-keyboard-mode .x-btn-transparent-button-medium.x-arrow-focus .x-btn-arrow-el {
+    border: 0px solid #fcf7f7;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2817 */
+.x-btn-over.x-btn-transparent-button-medium {
+    border-color: rgba(252, 247, 247, 0);
+    background-image: none;
+    background-color: rgba(252, 247, 247, 0);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2845 */
+.x-keyboard-mode .x-btn-focus.x-btn-over.x-btn-transparent-button-medium {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2874 */
+.x-btn.x-btn-menu-active.x-btn-transparent-button-medium,
+.x-btn.x-btn-pressed.x-btn-transparent-button-medium {
+    border-color: #bdb9b9;
+    background-image: none;
+    background-color: rgba(4, 4, 4, 0.2588235294117647);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2904 */
+.x-keyboard-mode .x-btn-focus.x-btn-menu-active.x-btn-transparent-button-medium,
+.x-keyboard-mode .x-btn-focus.x-btn-pressed.x-btn-transparent-button-medium {
+    background-image: none;
+    background-color: rgba(252, 247, 247, 0);
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2933 */
+.x-btn.x-btn-disabled.x-btn-transparent-button-medium {
+    background-image: none;
+    background-color: rgba(252, 247, 247, 0);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2966 */
+.x-keyboard-mode .x-btn-focus .x-btn-transparent-button-medium-tl,
+.x-keyboard-mode .x-btn-focus .x-btn-transparent-button-medium-bl,
+.x-keyboard-mode .x-btn-focus .x-btn-transparent-button-medium-tr,
+.x-keyboard-mode .x-btn-focus .x-btn-transparent-button-medium-br,
+.x-keyboard-mode .x-btn-focus .x-btn-transparent-button-medium-tc,
+.x-keyboard-mode .x-btn-focus .x-btn-transparent-button-medium-bc {
+    background-image: url(images/btn/btn-transparent-button-medium-focus-corners.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2974 */
+.x-keyboard-mode .x-btn-focus .x-btn-transparent-button-medium-ml,
+.x-keyboard-mode .x-btn-focus .x-btn-transparent-button-medium-mr {
+    background-image: url(images/btn/btn-transparent-button-medium-focus-sides.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2978 */
+.x-keyboard-mode .x-btn-focus .x-btn-transparent-button-medium-mc {
+    background-color: rgba(252, 247, 247, 0);
+    background-image: url(images/btn/btn-transparent-button-medium-focus-fbg.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2991 */
+.x-btn-over .x-btn-transparent-button-medium-tl,
+.x-btn-over .x-btn-transparent-button-medium-bl,
+.x-btn-over .x-btn-transparent-button-medium-tr,
+.x-btn-over .x-btn-transparent-button-medium-br,
+.x-btn-over .x-btn-transparent-button-medium-tc,
+.x-btn-over .x-btn-transparent-button-medium-bc {
+    background-image: url(images/btn/btn-transparent-button-medium-over-corners.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2999 */
+.x-btn-over .x-btn-transparent-button-medium-ml,
+.x-btn-over .x-btn-transparent-button-medium-mr {
+    background-image: url(images/btn/btn-transparent-button-medium-over-sides.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:3003 */
+.x-btn-over .x-btn-transparent-button-medium-mc {
+    background-color: rgba(252, 247, 247, 0);
+    background-image: url(images/btn/btn-transparent-button-medium-over-fbg.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:3016 */
+.x-keyboard-mode .x-btn-focus.x-btn-over .x-btn-transparent-button-medium-tl,
+.x-keyboard-mode .x-btn-focus.x-btn-over .x-btn-transparent-button-medium-bl,
+.x-keyboard-mode .x-btn-focus.x-btn-over .x-btn-transparent-button-medium-tr,
+.x-keyboard-mode .x-btn-focus.x-btn-over .x-btn-transparent-button-medium-br,
+.x-keyboard-mode .x-btn-focus.x-btn-over .x-btn-transparent-button-medium-tc,
+.x-keyboard-mode .x-btn-focus.x-btn-over .x-btn-transparent-button-medium-bc {
+    background-image: url(images/btn/btn-transparent-button-medium-focus-over-corners.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:3024 */
+.x-keyboard-mode .x-btn-focus.x-btn-over .x-btn-transparent-button-medium-ml,
+.x-keyboard-mode .x-btn-focus.x-btn-over .x-btn-transparent-button-medium-mr {
+    background-image: url(images/btn/btn-transparent-button-medium-focus-over-sides.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:3028 */
+.x-keyboard-mode .x-btn-focus.x-btn-over .x-btn-transparent-button-medium-mc {
+    background-color: rgba(252, 247, 247, 0);
+    background-image: url(images/btn/btn-transparent-button-medium-focus-over-fbg.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:3043 */
+.x-btn.x-btn-menu-active .x-btn-transparent-button-medium-tl,
+.x-btn.x-btn-menu-active .x-btn-transparent-button-medium-bl,
+.x-btn.x-btn-menu-active .x-btn-transparent-button-medium-tr,
+.x-btn.x-btn-menu-active .x-btn-transparent-button-medium-br,
+.x-btn.x-btn-menu-active .x-btn-transparent-button-medium-tc,
+.x-btn.x-btn-menu-active .x-btn-transparent-button-medium-bc,
+.x-btn.x-btn-pressed .x-btn-transparent-button-medium-tl,
+.x-btn.x-btn-pressed .x-btn-transparent-button-medium-bl,
+.x-btn.x-btn-pressed .x-btn-transparent-button-medium-tr,
+.x-btn.x-btn-pressed .x-btn-transparent-button-medium-br,
+.x-btn.x-btn-pressed .x-btn-transparent-button-medium-tc,
+.x-btn.x-btn-pressed .x-btn-transparent-button-medium-bc {
+    background-image: url(images/btn/btn-transparent-button-medium-pressed-corners.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:3051 */
+.x-btn.x-btn-menu-active .x-btn-transparent-button-medium-ml,
+.x-btn.x-btn-menu-active .x-btn-transparent-button-medium-mr,
+.x-btn.x-btn-pressed .x-btn-transparent-button-medium-ml,
+.x-btn.x-btn-pressed .x-btn-transparent-button-medium-mr {
+    background-image: url(images/btn/btn-transparent-button-medium-pressed-sides.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:3055 */
+.x-btn.x-btn-menu-active .x-btn-transparent-button-medium-mc,
+.x-btn.x-btn-pressed .x-btn-transparent-button-medium-mc {
+    background-color: rgba(4, 4, 4, 0.2588235294117647);
+    background-image: url(images/btn/btn-transparent-button-medium-pressed-fbg.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:3069 */
+.x-keyboard-mode .x-btn-focus.x-btn-menu-active .x-btn-transparent-button-medium-tl,
+.x-keyboard-mode .x-btn-focus.x-btn-menu-active .x-btn-transparent-button-medium-bl,
+.x-keyboard-mode .x-btn-focus.x-btn-menu-active .x-btn-transparent-button-medium-tr,
+.x-keyboard-mode .x-btn-focus.x-btn-menu-active .x-btn-transparent-button-medium-br,
+.x-keyboard-mode .x-btn-focus.x-btn-menu-active .x-btn-transparent-button-medium-tc,
+.x-keyboard-mode .x-btn-focus.x-btn-menu-active .x-btn-transparent-button-medium-bc,
+.x-keyboard-mode .x-btn-focus.x-btn-pressed .x-btn-transparent-button-medium-tl,
+.x-keyboard-mode .x-btn-focus.x-btn-pressed .x-btn-transparent-button-medium-bl,
+.x-keyboard-mode .x-btn-focus.x-btn-pressed .x-btn-transparent-button-medium-tr,
+.x-keyboard-mode .x-btn-focus.x-btn-pressed .x-btn-transparent-button-medium-br,
+.x-keyboard-mode .x-btn-focus.x-btn-pressed .x-btn-transparent-button-medium-tc,
+.x-keyboard-mode .x-btn-focus.x-btn-pressed .x-btn-transparent-button-medium-bc {
+    background-image: url(images/btn/btn-transparent-button-medium-focus-pressed-corners.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:3077 */
+.x-keyboard-mode .x-btn-focus.x-btn-menu-active .x-btn-transparent-button-medium-ml,
+.x-keyboard-mode .x-btn-focus.x-btn-menu-active .x-btn-transparent-button-medium-mr,
+.x-keyboard-mode .x-btn-focus.x-btn-pressed .x-btn-transparent-button-medium-ml,
+.x-keyboard-mode .x-btn-focus.x-btn-pressed .x-btn-transparent-button-medium-mr {
+    background-image: url(images/btn/btn-transparent-button-medium-focus-pressed-sides.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:3081 */
+.x-keyboard-mode .x-btn-focus.x-btn-menu-active .x-btn-transparent-button-medium-mc,
+.x-keyboard-mode .x-btn-focus.x-btn-pressed .x-btn-transparent-button-medium-mc {
+    background-color: rgba(252, 247, 247, 0);
+    background-image: url(images/btn/btn-transparent-button-medium-focus-pressed-fbg.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:3095 */
+.x-btn.x-btn-disabled .x-btn-transparent-button-medium-tl,
+.x-btn.x-btn-disabled .x-btn-transparent-button-medium-bl,
+.x-btn.x-btn-disabled .x-btn-transparent-button-medium-tr,
+.x-btn.x-btn-disabled .x-btn-transparent-button-medium-br,
+.x-btn.x-btn-disabled .x-btn-transparent-button-medium-tc,
+.x-btn.x-btn-disabled .x-btn-transparent-button-medium-bc {
+    background-image: url(images/btn/btn-transparent-button-medium-disabled-corners.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:3103 */
+.x-btn.x-btn-disabled .x-btn-transparent-button-medium-ml,
+.x-btn.x-btn-disabled .x-btn-transparent-button-medium-mr {
+    background-image: url(images/btn/btn-transparent-button-medium-disabled-sides.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:3107 */
+.x-btn.x-btn-disabled .x-btn-transparent-button-medium-mc {
+    background-color: rgba(252, 247, 247, 0);
+    background-image: url(images/btn/btn-transparent-button-medium-disabled-fbg.gif);
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:3117 */
+.x-nbr .x-btn-transparent-button-medium {
+    background-image: none;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:3123 */
+.x-btn-disabled.x-btn-transparent-button-medium {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    opacity: 0.3;
+}
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:799 */
 .x-panel-sei_mis_header {
     border-color: #fff;
@@ -1768,6 +3109,630 @@ a.x-btn:active {
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/border-management.scss:86 */
 .x-panel-sei_mis_header-outer-border-trbl {
+    border-color: #fff !important;
+    border-width: 1px !important;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:799 */
+.x-panel-error-panel {
+    border-color: #fff;
+    padding: 0;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:802 */
+.x-panel-error-panel.x-masked {
+    border-color: #fff;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:810 */
+.x-panel-header-error-panel {
+    font-size: 16px;
+    border: 1px solid #fff;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:819 */
+.x-panel-header-error-panel .x-tool-tool-el {
+    color: #a94442;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:842 */
+.x-panel-header-error-panel-horizontal {
+    padding: 11px 15px 12px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:854 */
+.x-panel-header-error-panel-horizontal.x-header-noborder {
+    padding: 12px 16px 12px 16px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:866 */
+.x-panel-header-error-panel-vertical {
+    padding: 15px 11px 15px 12px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:878 */
+.x-panel-header-error-panel-vertical.x-header-noborder {
+    padding: 16px 12px 16px 12px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:916 */
+.x-panel-header-title-error-panel {
+    color: #a94442;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 20px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:929 */
+.x-keyboard-mode .x-panel-header-title-error-panel.x-title-focus {
+    outline: 1px solid #fff;
+    outline-offset: 2px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/css-outline.scss:63 */
+.x-ie .x-keyboard-mode .x-panel-header-title-error-panel.x-title-focus,
+.x-ie10p .x-keyboard-mode .x-panel-header-title-error-panel.x-title-focus,
+.x-edge .x-keyboard-mode .x-panel-header-title-error-panel.x-title-focus {
+    outline: none;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/css-outline.scss:39 */
+.x-ie .x-keyboard-mode .x-panel-header-title-error-panel.x-title-focus:after,
+.x-ie10p .x-keyboard-mode .x-panel-header-title-error-panel.x-title-focus:after,
+.x-edge .x-keyboard-mode .x-panel-header-title-error-panel.x-title-focus:after {
+    position: absolute;
+    content: ' ';
+    top: -3px;
+    right: -3px;
+    bottom: -3px;
+    left: -3px;
+    border: 1px solid #fff;
+    pointer-events: none;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:950 */
+.x-panel-header-title-error-panel > .x-title-text-error-panel {
+    text-transform: none;
+    padding: 0;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:997 */
+.x-panel-header-title-error-panel > .x-title-icon-wrap-error-panel.x-title-icon-top {
+    height: 24px;
+    padding-bottom: 8px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:1002 */
+.x-panel-header-title-error-panel > .x-title-icon-wrap-error-panel.x-title-icon-right {
+    width: 24px;
+    padding-left: 8px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:1014 */
+.x-panel-header-title-error-panel > .x-title-icon-wrap-error-panel.x-title-icon-bottom {
+    height: 24px;
+    padding-top: 8px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:1019 */
+.x-panel-header-title-error-panel > .x-title-icon-wrap-error-panel.x-title-icon-left {
+    width: 24px;
+    padding-right: 8px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:1031 */
+.x-panel-header-title-error-panel > .x-title-icon-wrap-error-panel > .x-title-icon-error-panel {
+    width: 16px;
+    height: 16px;
+    font-size: 16px;
+    color: #a94442;
+    background-position: center center;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:1051 */
+.x-ie8 .x-panel-header-title-error-panel > .x-title-icon-wrap-error-panel > .x-title-icon-error-panel.x-title-glyph {
+    color: #a94442;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:1062 */
+.x-panel-body-error-panel {
+    background: #f2dede;
+    border-color: #d1d1d1;
+    color: #a94442;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    border-width: 1px;
+    border-style: solid;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:1226 */
+.x-panel-header-error-panel {
+    background-image: none;
+    background-color: #f2dede;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:1230 */
+.x-panel-header-error-panel-vertical {
+    background-image: none;
+    background-color: #f2dede;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:1288 */
+.x-panel .x-panel-header-error-panel-collapsed-border-top {
+    border-bottom-width: 1px !important;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:1292 */
+.x-panel .x-panel-header-error-panel-collapsed-border-right {
+    border-left-width: 1px !important;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:1296 */
+.x-panel .x-panel-header-error-panel-collapsed-border-bottom {
+    border-top-width: 1px !important;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:1300 */
+.x-panel .x-panel-header-error-panel-collapsed-border-left {
+    border-right-width: 1px !important;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:1317 */
+.x-panel-header-error-panel-top {
+    -webkit-box-shadow: #ebcccc 0 1px 0px 0 inset, #ebcccc 0 -1px 0px 0 inset, #ebcccc -1px 0 0px 0 inset, #ebcccc 1px 0 0px 0 inset;
+    -moz-box-shadow: #ebcccc 0 1px 0px 0 inset, #ebcccc 0 -1px 0px 0 inset, #ebcccc -1px 0 0px 0 inset, #ebcccc 1px 0 0px 0 inset;
+    box-shadow: #ebcccc 0 1px 0px 0 inset, #ebcccc 0 -1px 0px 0 inset, #ebcccc -1px 0 0px 0 inset, #ebcccc 1px 0 0px 0 inset;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:1321 */
+.x-panel-header-error-panel-right {
+    -webkit-box-shadow: #ebcccc 0 1px 0px 0 inset, #ebcccc 0 -1px 0px 0 inset, #ebcccc -1px 0 0px 0 inset, #ebcccc 1px 0 0px 0 inset;
+    -moz-box-shadow: #ebcccc 0 1px 0px 0 inset, #ebcccc 0 -1px 0px 0 inset, #ebcccc -1px 0 0px 0 inset, #ebcccc 1px 0 0px 0 inset;
+    box-shadow: #ebcccc 0 1px 0px 0 inset, #ebcccc 0 -1px 0px 0 inset, #ebcccc -1px 0 0px 0 inset, #ebcccc 1px 0 0px 0 inset;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:1325 */
+.x-panel-header-error-panel-bottom {
+    -webkit-box-shadow: #ebcccc 0 1px 0px 0 inset, #ebcccc 0 -1px 0px 0 inset, #ebcccc -1px 0 0px 0 inset, #ebcccc 1px 0 0px 0 inset;
+    -moz-box-shadow: #ebcccc 0 1px 0px 0 inset, #ebcccc 0 -1px 0px 0 inset, #ebcccc -1px 0 0px 0 inset, #ebcccc 1px 0 0px 0 inset;
+    box-shadow: #ebcccc 0 1px 0px 0 inset, #ebcccc 0 -1px 0px 0 inset, #ebcccc -1px 0 0px 0 inset, #ebcccc 1px 0 0px 0 inset;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:1329 */
+.x-panel-header-error-panel-left {
+    -webkit-box-shadow: #ebcccc 0 1px 0px 0 inset, #ebcccc 0 -1px 0px 0 inset, #ebcccc -1px 0 0px 0 inset, #ebcccc 1px 0 0px 0 inset;
+    -moz-box-shadow: #ebcccc 0 1px 0px 0 inset, #ebcccc 0 -1px 0px 0 inset, #ebcccc -1px 0 0px 0 inset, #ebcccc 1px 0 0px 0 inset;
+    box-shadow: #ebcccc 0 1px 0px 0 inset, #ebcccc 0 -1px 0px 0 inset, #ebcccc -1px 0 0px 0 inset, #ebcccc 1px 0 0px 0 inset;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:1336 */
+.x-panel-header-error-panel-horizontal .x-tool-after-title {
+    margin: 0 0 0 6px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:1346 */
+.x-panel-header-error-panel-horizontal .x-tool-before-title {
+    margin: 0 6px 0 0;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:1358 */
+.x-panel-header-error-panel-vertical .x-tool-after-title {
+    margin: 6px 0 0 0;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:1368 */
+.x-panel-header-error-panel-vertical .x-tool-before-title {
+    margin: 0 0 6px 0;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:1381 */
+.x-keyboard-mode .x-panel-header-error-panel .x-tool-focus {
+    outline: 1px solid #fff;
+    outline-offset: 2px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/css-outline.scss:63 */
+.x-ie .x-keyboard-mode .x-panel-header-error-panel .x-tool-focus,
+.x-ie10p .x-keyboard-mode .x-panel-header-error-panel .x-tool-focus,
+.x-edge .x-keyboard-mode .x-panel-header-error-panel .x-tool-focus {
+    outline: none;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/css-outline.scss:39 */
+.x-ie .x-keyboard-mode .x-panel-header-error-panel .x-tool-focus:after,
+.x-ie10p .x-keyboard-mode .x-panel-header-error-panel .x-tool-focus:after,
+.x-edge .x-keyboard-mode .x-panel-header-error-panel .x-tool-focus:after {
+    position: absolute;
+    content: ' ';
+    top: -3px;
+    right: -3px;
+    bottom: -3px;
+    left: -3px;
+    border: 1px solid #fff;
+    pointer-events: none;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:1429 */
+.x-panel-error-panel-resizable .x-panel-handle {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    opacity: 0;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/border-management.scss:2 */
+.x-panel-error-panel-outer-border-l {
+    border-left-color: #fff !important;
+    border-left-width: 1px !important;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/border-management.scss:6 */
+.x-panel-error-panel-outer-border-b {
+    border-bottom-color: #fff !important;
+    border-bottom-width: 1px !important;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/border-management.scss:10 */
+.x-panel-error-panel-outer-border-bl {
+    border-bottom-color: #fff !important;
+    border-bottom-width: 1px !important;
+    border-left-color: #fff !important;
+    border-left-width: 1px !important;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/border-management.scss:16 */
+.x-panel-error-panel-outer-border-r {
+    border-right-color: #fff !important;
+    border-right-width: 1px !important;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/border-management.scss:20 */
+.x-panel-error-panel-outer-border-rl {
+    border-right-color: #fff !important;
+    border-right-width: 1px !important;
+    border-left-color: #fff !important;
+    border-left-width: 1px !important;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/border-management.scss:26 */
+.x-panel-error-panel-outer-border-rb {
+    border-right-color: #fff !important;
+    border-right-width: 1px !important;
+    border-bottom-color: #fff !important;
+    border-bottom-width: 1px !important;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/border-management.scss:32 */
+.x-panel-error-panel-outer-border-rbl {
+    border-right-color: #fff !important;
+    border-right-width: 1px !important;
+    border-bottom-color: #fff !important;
+    border-bottom-width: 1px !important;
+    border-left-color: #fff !important;
+    border-left-width: 1px !important;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/border-management.scss:40 */
+.x-panel-error-panel-outer-border-t {
+    border-top-color: #fff !important;
+    border-top-width: 1px !important;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/border-management.scss:44 */
+.x-panel-error-panel-outer-border-tl {
+    border-top-color: #fff !important;
+    border-top-width: 1px !important;
+    border-left-color: #fff !important;
+    border-left-width: 1px !important;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/border-management.scss:50 */
+.x-panel-error-panel-outer-border-tb {
+    border-top-color: #fff !important;
+    border-top-width: 1px !important;
+    border-bottom-color: #fff !important;
+    border-bottom-width: 1px !important;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/border-management.scss:56 */
+.x-panel-error-panel-outer-border-tbl {
+    border-top-color: #fff !important;
+    border-top-width: 1px !important;
+    border-bottom-color: #fff !important;
+    border-bottom-width: 1px !important;
+    border-left-color: #fff !important;
+    border-left-width: 1px !important;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/border-management.scss:64 */
+.x-panel-error-panel-outer-border-tr {
+    border-top-color: #fff !important;
+    border-top-width: 1px !important;
+    border-right-color: #fff !important;
+    border-right-width: 1px !important;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/border-management.scss:70 */
+.x-panel-error-panel-outer-border-trl {
+    border-top-color: #fff !important;
+    border-top-width: 1px !important;
+    border-right-color: #fff !important;
+    border-right-width: 1px !important;
+    border-left-color: #fff !important;
+    border-left-width: 1px !important;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/border-management.scss:78 */
+.x-panel-error-panel-outer-border-trb {
+    border-top-color: #fff !important;
+    border-top-width: 1px !important;
+    border-right-color: #fff !important;
+    border-right-width: 1px !important;
+    border-bottom-color: #fff !important;
+    border-bottom-width: 1px !important;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/border-management.scss:86 */
+.x-panel-error-panel-outer-border-trbl {
+    border-color: #fff !important;
+    border-width: 1px !important;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:799 */
+.x-panel-warning-panel {
+    border-color: #fff;
+    padding: 0;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:802 */
+.x-panel-warning-panel.x-masked {
+    border-color: #fff;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:810 */
+.x-panel-header-warning-panel {
+    font-size: 16px;
+    border: 1px solid #fff;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:819 */
+.x-panel-header-warning-panel .x-tool-tool-el {
+    color: #8a6d3b;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:842 */
+.x-panel-header-warning-panel-horizontal {
+    padding: 11px 15px 12px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:854 */
+.x-panel-header-warning-panel-horizontal.x-header-noborder {
+    padding: 12px 16px 12px 16px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:866 */
+.x-panel-header-warning-panel-vertical {
+    padding: 15px 11px 15px 12px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:878 */
+.x-panel-header-warning-panel-vertical.x-header-noborder {
+    padding: 16px 12px 16px 12px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:916 */
+.x-panel-header-title-warning-panel {
+    color: #8a6d3b;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 20px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:929 */
+.x-keyboard-mode .x-panel-header-title-warning-panel.x-title-focus {
+    outline: 1px solid #fff;
+    outline-offset: 2px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/css-outline.scss:63 */
+.x-ie .x-keyboard-mode .x-panel-header-title-warning-panel.x-title-focus,
+.x-ie10p .x-keyboard-mode .x-panel-header-title-warning-panel.x-title-focus,
+.x-edge .x-keyboard-mode .x-panel-header-title-warning-panel.x-title-focus {
+    outline: none;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/css-outline.scss:39 */
+.x-ie .x-keyboard-mode .x-panel-header-title-warning-panel.x-title-focus:after,
+.x-ie10p .x-keyboard-mode .x-panel-header-title-warning-panel.x-title-focus:after,
+.x-edge .x-keyboard-mode .x-panel-header-title-warning-panel.x-title-focus:after {
+    position: absolute;
+    content: ' ';
+    top: -3px;
+    right: -3px;
+    bottom: -3px;
+    left: -3px;
+    border: 1px solid #fff;
+    pointer-events: none;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:950 */
+.x-panel-header-title-warning-panel > .x-title-text-warning-panel {
+    text-transform: none;
+    padding: 0;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:997 */
+.x-panel-header-title-warning-panel > .x-title-icon-wrap-warning-panel.x-title-icon-top {
+    height: 24px;
+    padding-bottom: 8px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:1002 */
+.x-panel-header-title-warning-panel > .x-title-icon-wrap-warning-panel.x-title-icon-right {
+    width: 24px;
+    padding-left: 8px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:1014 */
+.x-panel-header-title-warning-panel > .x-title-icon-wrap-warning-panel.x-title-icon-bottom {
+    height: 24px;
+    padding-top: 8px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:1019 */
+.x-panel-header-title-warning-panel > .x-title-icon-wrap-warning-panel.x-title-icon-left {
+    width: 24px;
+    padding-right: 8px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:1031 */
+.x-panel-header-title-warning-panel > .x-title-icon-wrap-warning-panel > .x-title-icon-warning-panel {
+    width: 16px;
+    height: 16px;
+    font-size: 16px;
+    color: #8a6d3b;
+    background-position: center center;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:1051 */
+.x-ie8 .x-panel-header-title-warning-panel > .x-title-icon-wrap-warning-panel > .x-title-icon-warning-panel.x-title-glyph {
+    color: #8a6d3b;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:1062 */
+.x-panel-body-warning-panel {
+    background: #fcf8e3;
+    border-color: #d1d1d1;
+    color: #8a6d3b;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    border-width: 1px;
+    border-style: solid;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:1226 */
+.x-panel-header-warning-panel {
+    background-image: none;
+    background-color: #fcf8e3;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:1230 */
+.x-panel-header-warning-panel-vertical {
+    background-image: none;
+    background-color: #fcf8e3;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:1288 */
+.x-panel .x-panel-header-warning-panel-collapsed-border-top {
+    border-bottom-width: 1px !important;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:1292 */
+.x-panel .x-panel-header-warning-panel-collapsed-border-right {
+    border-left-width: 1px !important;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:1296 */
+.x-panel .x-panel-header-warning-panel-collapsed-border-bottom {
+    border-top-width: 1px !important;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:1300 */
+.x-panel .x-panel-header-warning-panel-collapsed-border-left {
+    border-right-width: 1px !important;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:1317 */
+.x-panel-header-warning-panel-top {
+    -webkit-box-shadow: #faf2cc 0 1px 0px 0 inset, #faf2cc 0 -1px 0px 0 inset, #faf2cc -1px 0 0px 0 inset, #faf2cc 1px 0 0px 0 inset;
+    -moz-box-shadow: #faf2cc 0 1px 0px 0 inset, #faf2cc 0 -1px 0px 0 inset, #faf2cc -1px 0 0px 0 inset, #faf2cc 1px 0 0px 0 inset;
+    box-shadow: #faf2cc 0 1px 0px 0 inset, #faf2cc 0 -1px 0px 0 inset, #faf2cc -1px 0 0px 0 inset, #faf2cc 1px 0 0px 0 inset;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:1321 */
+.x-panel-header-warning-panel-right {
+    -webkit-box-shadow: #faf2cc 0 1px 0px 0 inset, #faf2cc 0 -1px 0px 0 inset, #faf2cc -1px 0 0px 0 inset, #faf2cc 1px 0 0px 0 inset;
+    -moz-box-shadow: #faf2cc 0 1px 0px 0 inset, #faf2cc 0 -1px 0px 0 inset, #faf2cc -1px 0 0px 0 inset, #faf2cc 1px 0 0px 0 inset;
+    box-shadow: #faf2cc 0 1px 0px 0 inset, #faf2cc 0 -1px 0px 0 inset, #faf2cc -1px 0 0px 0 inset, #faf2cc 1px 0 0px 0 inset;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:1325 */
+.x-panel-header-warning-panel-bottom {
+    -webkit-box-shadow: #faf2cc 0 1px 0px 0 inset, #faf2cc 0 -1px 0px 0 inset, #faf2cc -1px 0 0px 0 inset, #faf2cc 1px 0 0px 0 inset;
+    -moz-box-shadow: #faf2cc 0 1px 0px 0 inset, #faf2cc 0 -1px 0px 0 inset, #faf2cc -1px 0 0px 0 inset, #faf2cc 1px 0 0px 0 inset;
+    box-shadow: #faf2cc 0 1px 0px 0 inset, #faf2cc 0 -1px 0px 0 inset, #faf2cc -1px 0 0px 0 inset, #faf2cc 1px 0 0px 0 inset;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:1329 */
+.x-panel-header-warning-panel-left {
+    -webkit-box-shadow: #faf2cc 0 1px 0px 0 inset, #faf2cc 0 -1px 0px 0 inset, #faf2cc -1px 0 0px 0 inset, #faf2cc 1px 0 0px 0 inset;
+    -moz-box-shadow: #faf2cc 0 1px 0px 0 inset, #faf2cc 0 -1px 0px 0 inset, #faf2cc -1px 0 0px 0 inset, #faf2cc 1px 0 0px 0 inset;
+    box-shadow: #faf2cc 0 1px 0px 0 inset, #faf2cc 0 -1px 0px 0 inset, #faf2cc -1px 0 0px 0 inset, #faf2cc 1px 0 0px 0 inset;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:1336 */
+.x-panel-header-warning-panel-horizontal .x-tool-after-title {
+    margin: 0 0 0 6px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:1346 */
+.x-panel-header-warning-panel-horizontal .x-tool-before-title {
+    margin: 0 6px 0 0;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:1358 */
+.x-panel-header-warning-panel-vertical .x-tool-after-title {
+    margin: 6px 0 0 0;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:1368 */
+.x-panel-header-warning-panel-vertical .x-tool-before-title {
+    margin: 0 0 6px 0;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:1381 */
+.x-keyboard-mode .x-panel-header-warning-panel .x-tool-focus {
+    outline: 1px solid #fff;
+    outline-offset: 2px;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/css-outline.scss:63 */
+.x-ie .x-keyboard-mode .x-panel-header-warning-panel .x-tool-focus,
+.x-ie10p .x-keyboard-mode .x-panel-header-warning-panel .x-tool-focus,
+.x-edge .x-keyboard-mode .x-panel-header-warning-panel .x-tool-focus {
+    outline: none;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/css-outline.scss:39 */
+.x-ie .x-keyboard-mode .x-panel-header-warning-panel .x-tool-focus:after,
+.x-ie10p .x-keyboard-mode .x-panel-header-warning-panel .x-tool-focus:after,
+.x-edge .x-keyboard-mode .x-panel-header-warning-panel .x-tool-focus:after {
+    position: absolute;
+    content: ' ';
+    top: -3px;
+    right: -3px;
+    bottom: -3px;
+    left: -3px;
+    border: 1px solid #fff;
+    pointer-events: none;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:1429 */
+.x-panel-warning-panel-resizable .x-panel-handle {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    opacity: 0;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/border-management.scss:2 */
+.x-panel-warning-panel-outer-border-l {
+    border-left-color: #fff !important;
+    border-left-width: 1px !important;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/border-management.scss:6 */
+.x-panel-warning-panel-outer-border-b {
+    border-bottom-color: #fff !important;
+    border-bottom-width: 1px !important;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/border-management.scss:10 */
+.x-panel-warning-panel-outer-border-bl {
+    border-bottom-color: #fff !important;
+    border-bottom-width: 1px !important;
+    border-left-color: #fff !important;
+    border-left-width: 1px !important;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/border-management.scss:16 */
+.x-panel-warning-panel-outer-border-r {
+    border-right-color: #fff !important;
+    border-right-width: 1px !important;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/border-management.scss:20 */
+.x-panel-warning-panel-outer-border-rl {
+    border-right-color: #fff !important;
+    border-right-width: 1px !important;
+    border-left-color: #fff !important;
+    border-left-width: 1px !important;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/border-management.scss:26 */
+.x-panel-warning-panel-outer-border-rb {
+    border-right-color: #fff !important;
+    border-right-width: 1px !important;
+    border-bottom-color: #fff !important;
+    border-bottom-width: 1px !important;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/border-management.scss:32 */
+.x-panel-warning-panel-outer-border-rbl {
+    border-right-color: #fff !important;
+    border-right-width: 1px !important;
+    border-bottom-color: #fff !important;
+    border-bottom-width: 1px !important;
+    border-left-color: #fff !important;
+    border-left-width: 1px !important;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/border-management.scss:40 */
+.x-panel-warning-panel-outer-border-t {
+    border-top-color: #fff !important;
+    border-top-width: 1px !important;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/border-management.scss:44 */
+.x-panel-warning-panel-outer-border-tl {
+    border-top-color: #fff !important;
+    border-top-width: 1px !important;
+    border-left-color: #fff !important;
+    border-left-width: 1px !important;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/border-management.scss:50 */
+.x-panel-warning-panel-outer-border-tb {
+    border-top-color: #fff !important;
+    border-top-width: 1px !important;
+    border-bottom-color: #fff !important;
+    border-bottom-width: 1px !important;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/border-management.scss:56 */
+.x-panel-warning-panel-outer-border-tbl {
+    border-top-color: #fff !important;
+    border-top-width: 1px !important;
+    border-bottom-color: #fff !important;
+    border-bottom-width: 1px !important;
+    border-left-color: #fff !important;
+    border-left-width: 1px !important;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/border-management.scss:64 */
+.x-panel-warning-panel-outer-border-tr {
+    border-top-color: #fff !important;
+    border-top-width: 1px !important;
+    border-right-color: #fff !important;
+    border-right-width: 1px !important;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/border-management.scss:70 */
+.x-panel-warning-panel-outer-border-trl {
+    border-top-color: #fff !important;
+    border-top-width: 1px !important;
+    border-right-color: #fff !important;
+    border-right-width: 1px !important;
+    border-left-color: #fff !important;
+    border-left-width: 1px !important;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/border-management.scss:78 */
+.x-panel-warning-panel-outer-border-trb {
+    border-top-color: #fff !important;
+    border-top-width: 1px !important;
+    border-right-color: #fff !important;
+    border-right-width: 1px !important;
+    border-bottom-color: #fff !important;
+    border-bottom-width: 1px !important;
+}
+/* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/border-management.scss:86 */
+.x-panel-warning-panel-outer-border-trbl {
     border-color: #fff !important;
     border-width: 1px !important;
 }

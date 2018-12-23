@@ -78073,9 +78073,9 @@ Ext.define('RosettaStone.view.main.MainController', {extend:Ext.app.ViewControll
 }});
 Ext.define('RosettaStone.view.main.MainModel', {extend:Ext.app.ViewModel, alias:'viewmodel.main', data:{name:['\x3cspan class\x3d"header_red"\x3eSEI\x3c/span\x3e', '\x3cspan class\x3d"header_mis"\x3eMIS\x3c/span\x3e', '\x3cspan class\x3d"header_approval"\x3eOnline Approvals\x3c/span\x3e'].join(' '), routeId:''}, stores:{personnel:{type:'personnel'}}});
 Ext.define('RosettaStone.view.dashboard.Dashboard', {extend:Ext.panel.Panel, xtype:'app-dashboard', title:'Dashboard', iconCls:'x-fa fa-dashboard', html:'Coming soon'});
-Ext.define('RosettaStone.view.main.Main', {extend:Ext.panel.Panel, xtype:'main', controller:'main', viewModel:{type:'main'}, layout:'card', defaultDockWeights:{top:10, left:20, bottom:30, right:40}, dockedItems:[{xtype:'component', dock:'top', cls:'header', bind:{html:'{name}'}}, {xtype:'main-menu', dock:'left', reference:'mainmenu'}, {xtype:'toolbar', ui:'footer', dock:'bottom', weight:32, items:[{xtype:'component', html:'Do you have comments? Give us feedback!'}, '-\x3e', {text:'FAQ'}, '-', {text:'Project Wiki'}, 
-'-', {text:'Issue Tracker'}, '-', {text:'Release Notes'}]}, {xtype:'container', dock:'bottom', layout:{type:'hbox'}, cls:'footer', weight:31, items:[{xtype:'image', src:'resources/images/Software_Engineering_Institute_Unitmark_White.svg', cls:'footer_image'}, {xtype:'component', cls:'footer_copyright', flex:1, html:['\x26copy; 2018 Carnegie Mellon University', 'Proprietary. SEI Internal Use Only | Terms of Use'].join('\x3cbr/\x3e')}]}], defaults:{bodyPadding:20}, items:[{xtype:'container', layout:'center', 
-items:[{xtype:'component', html:'Loading...'}]}, {xtype:'unknownroute'}]});
+Ext.define('RosettaStone.view.main.Main', {extend:Ext.panel.Panel, xtype:'main', controller:'main', viewModel:{type:'main'}, layout:'card', defaultDockWeights:{top:10, left:20, bottom:30, right:40}, dockedItems:[{xtype:'component', dock:'top', cls:'header', bind:{html:'{name}'}}, {xtype:'main-menu', dock:'left', reference:'mainmenu'}, {xtype:'toolbar', ui:'footer', dock:'bottom', weight:32, items:[{xtype:'component', html:'Do you have comments? Give us feedback!'}, '-\x3e', {text:'FAQ', ui:'transparent-button'}, 
+'-', {text:'Project Wiki', ui:'transparent-button'}, '-', {text:'Issue Tracker', ui:'transparent-button'}, '-', {text:'Release Notes', ui:'transparent-button'}]}, {xtype:'container', dock:'bottom', layout:{type:'hbox'}, cls:'footer', weight:31, items:[{xtype:'image', src:'resources/images/Software_Engineering_Institute_Unitmark_White.svg', cls:'footer_image'}, {xtype:'component', cls:'footer_copyright', flex:1, html:['\x26copy; 2018 Carnegie Mellon University', 'Proprietary. SEI Internal Use Only | Terms of Use'].join('\x3cbr/\x3e')}]}], 
+defaults:{bodyPadding:20}, items:[{xtype:'container', layout:'center', items:[{xtype:'component', html:'Loading...'}]}, {xtype:'unknownroute'}]});
 Ext.define('RosettaStone.view.main.MenuController', {extend:Ext.app.ViewController, alias:'controller.main-menu', collapse:function() {
   this.getViewModel().set('expanded', false);
 }, expand:function() {
@@ -78104,7 +78104,12 @@ Ext.define('RosettaStone.view.main.MenuModel', {extend:Ext.app.ViewModel, alias:
 Ext.define('RosettaStone.view.main.Menu', {extend:Ext.panel.Panel, xtype:'main-menu', controller:'main-menu', viewModel:{type:'main-menu'}, bind:{width:'{currentWidth}'}, cls:'main-menu', componentCls:'sidebar', layout:{type:'vbox', align:'stretch'}, defaults:{xtype:'treelist', ui:'nav', micro:true, expanderFirst:false, expanderOnly:true, ownerSelector:'sidebar', bind:{micro:'{!expanded}'}}, items:[{reference:'navigationTree', flex:1, store:'NavigationMenuTree', listeners:{itemclick:'onNavigationClick'}}, 
 {cls:'menu-expand-item', defaults:{setFloated:Ext.emptyFn, hoverCls:'', rowHoverCls:''}, store:{root:{children:[{text:'\x26nbsp;', iconCls:'menu-expand-icon', selectable:false, leaf:true}]}}, listeners:{itemclick:'onToggleExpandClick'}}]});
 Ext.define('RosettaStone.view.main.UnknownRoute', {extend:Ext.panel.Panel, xtype:'unknownroute', title:'Unknown', itemId:'unknownroute', bind:{html:'No UI found for the "{routeId}" route.'}});
-Ext.define('RosettaStone.view.personnel.PersonnelController', {extend:Ext.app.ViewController, alias:'controller.personnel', routes:{'personnel/:email':{action:'onEmailRoute', conditions:{':email':'(.*)'}}}, onEmailRoute:function(email) {
+Ext.define('RosettaStone.view.personnel.PersonnelController', {extend:Ext.app.ViewController, alias:'controller.personnel', routes:{'personnel':'onPersonnelRoute', 'personnel/:email':{action:'onEmailRoute', conditions:{':email':'(.*)'}}}, onPersonnelRoute:function() {
+  var viewModel = this.getViewModel(), personnelRecord = viewModel.get('personnelRecord');
+  if (personnelRecord && !personnelRecord.phantom) {
+    this.redirectTo(personnelRecord);
+  }
+}, onEmailRoute:function(email) {
   var viewModel = this.getViewModel(), personnelStore = viewModel.get('personnel'), personnelRecord = personnelStore.getById(email);
   if (personnelRecord) {
     viewModel.set('personnelRecord', personnelRecord);
@@ -78113,10 +78118,70 @@ Ext.define('RosettaStone.view.personnel.PersonnelController', {extend:Ext.app.Vi
   }
 }, onItemSelected:function(sender, record) {
   this.redirectTo(record);
+}, onDetailSaveClick:function() {
+  var viewModel = this.getViewModel(), personnelRecord = viewModel.get('personnelRecord');
+  personnelRecord.save({failure:function(record, operation) {
+  }, success:function(record, operation) {
+  }, callback:function(record, operation, success) {
+  }});
+}, onDetailCancelClick:function() {
+  var viewModel = this.getViewModel(), personnelRecord = viewModel.get('personnelRecord');
+  personnelRecord.reject();
+}, onPopupViewClick:function() {
+  var viewModel = this.getViewModel(), personnelRecord = viewModel.get('personnelRecord');
+  if (personnelRecord) {
+    Ext.widget('window', {bodyPadding:10, viewModel:{data:{personnelRecord:personnelRecord}}, bind:{title:'{personnelRecord.name}', html:'Email: {personnelRecord.email}\x3cbr/\x3ePhone: {personnelRecord.phone}'}}).show();
+  }
+}, onValidityChange:function(form, isValid) {
+  this.getViewModel().set('isFormValid', isValid);
 }});
-Ext.define('RosettaStone.view.personnel.PersonnelModel', {extend:Ext.app.ViewModel, alias:'viewmodel.personnel', data:{}});
-Ext.define('RosettaStone.view.personnel.Personnel', {extend:Ext.panel.Panel, xtype:'personnel', controller:'personnel', viewModel:{type:'personnel'}, title:'Personnel', iconCls:'x-fa fa-user', layout:{type:'hbox', align:'stretch'}, items:[{xtype:'personnelgrid', reference:'personnelgrid', flex:1}, {xtype:'form', title:'Details', bodyPadding:10, width:200, fieldDefaults:{labelAlign:'top'}, items:[{xtype:'textfield', fieldLabel:'Name', bind:{value:'{personnelRecord.name}'}}, {xtype:'textfield', fieldLabel:'Email', 
-bind:{value:'{personnelRecord.email}'}}, {xtype:'textfield', fieldLabel:'name', bind:{value:'{personnelRecord.phone}'}}]}]});
-Ext.define('RosettaStone.view.personnel.PersonnelGrid', {extend:Ext.grid.Panel, xtype:'personnelgrid', title:'Personnel', bind:{store:'{personnel}', selection:'{personnelRecord}'}, columns:[{text:'Name', dataIndex:'name'}, {text:'Email', dataIndex:'email', flex:1}, {text:'Phone', dataIndex:'phone', flex:1}], listeners:{select:'onItemSelected'}});
+Ext.define('RosettaStone.view.personnel.PersonnelModel', {extend:Ext.app.ViewModel, alias:'viewmodel.personnel', data:{personnelRecord:null}, formulas:{isModelValid:{bind:{bindTo:'{personnelRecord}', deep:true}, get:function(rec) {
+  var view = this.getView(), isModelValid = rec && rec.isModel && rec.isValid();
+  if (rec && rec.isModel) {
+    if (isModelValid === false) {
+      this.set('isFormValid', false);
+    }
+    Ext.Array.each(view.query('form'), function(form) {
+      form.isValid();
+    });
+  }
+  return isModelValid;
+}}, isModelDirty:{bind:{bindTo:'{personnelRecord}', deep:true}, get:function(rec) {
+  return rec && rec.isModel && rec.dirty;
+}}, isFormValid:{get:function(get) {
+  var _isFormValid = get('_isFormValid');
+  if (Ext.isBoolean(_isFormValid)) {
+    return _isFormValid;
+  } else {
+    return true;
+  }
+}, set:function(isFormValid) {
+  var view = this.getView();
+  if (!isFormValid) {
+    Ext.Array.each(view.query('form'), function(form) {
+      form.isValid();
+    });
+  }
+  this.set('_isFormValid', isFormValid);
+}}, canSave:{bind:{isModelDirty:'{isModelDirty}', isModelValid:'{isModelValid}', isFormValid:'{isFormValid}'}, get:function(obj) {
+  var isModelDirty = obj.isModelDirty, isModelValid = obj.isModelValid, isFormValid = obj.isFormValid;
+  return isModelDirty && isFormValid && isModelValid;
+}}, validationMessage:{bind:{isModelValid:'{isModelValid}', isFormValid:'{isFormValid}'}, get:function(obj) {
+  var isModelValid = obj.isModelValid, isFormValid = obj.isFormValid, needsMsg = isModelValid === false || isFormValid === false;
+  if (needsMsg) {
+    return 'Invalid or missing data.  Please correct before saving or processing.';
+  } else {
+    return false;
+  }
+}}, pendingChangesMessage:{bind:{canSave:'{canSave}'}, get:function(obj) {
+  var canSave = obj.canSave;
+  return canSave ? 'There are pending changes.  This partnership must be saved before it can be processed.' : '';
+}}}});
+Ext.define('RosettaStone.view.personnel.Personnel', {extend:Ext.panel.Panel, xtype:'personnel', controller:'personnel', viewModel:{type:'personnel'}, title:'Personnel', iconCls:'x-fa fa-user', layout:{type:'hbox', align:'stretch'}, dockedItems:[{xtype:'widgets-alertpanel', ui:'error-panel', weight:-10, dock:'top', hidden:true, bind:{hidden:'{!validationMessage}', html:'{validationMessage}'}}, {xtype:'widgets-alertpanel', ui:'warning-panel', weight:-10, dock:'top', hidden:true, bind:{hidden:'{!pendingChangesMessage}', 
+html:'{pendingChangesMessage}'}}], items:[{xtype:'personnel-grid', flex:1}, {xtype:'personnel-details', flex:2, bind:{hidden:'{!personnelRecord}'}}]});
+Ext.define('RosettaStone.view.personnel.PersonnelDetails', {extend:Ext.form.Panel, xtype:'personnel-details', title:'Details', bodyPadding:10, listeners:{validitychange:'onValidityChange'}, fieldDefaults:{labelAlign:'top', anchor:'100%'}, dockedItems:[{xtype:'toolbar', dock:'bottom', items:[{text:'Save', handler:'onDetailSaveClick', bind:{disabled:'{!canSave}'}}, {text:'Cancel', handler:'onDetailCancelClick', bind:{disabled:'{!personnelRecord.dirty}'}}]}], items:[{xtype:'textfield', fieldLabel:'Name', 
+allowBlank:false, bind:{disabled:'{!personnelRecord}', value:'{personnelRecord.name}'}}, {xtype:'textfield', fieldLabel:'Email', bind:{disabled:'{!personnelRecord}', value:'{personnelRecord.email}'}}, {xtype:'textfield', fieldLabel:'name', bind:{disabled:'{!personnelRecord}', value:'{personnelRecord.phone}'}}]});
+Ext.define('RosettaStone.view.personnel.PersonnelGrid', {extend:Ext.grid.Panel, xtype:'personnel-grid', requires:[], reference:'personnelGrid', bind:{store:'{personnel}', selection:'{personnelRecord}'}, dockedItems:[{xtype:'toolbar', dock:'bottom', items:[{text:'View in popup', bind:{disabled:'{!personnelGrid.selection}'}, handler:'onPopupViewClick'}]}], columns:[{text:'Name', dataIndex:'name', flex:1}], listeners:{select:'onItemSelected'}});
 Ext.define('RosettaStone.view.ptoconfirmation.PTOConfirmation', {extend:Ext.panel.Panel, xtype:'ptoconfirmation', title:'PTO Confirmation', iconCls:'x-fa fa-dashboard', html:'Coming soon'});
+Ext.define('RosettaStone.view.widgets.AlertPanel', {extend:Ext.panel.Panel, xtype:'widgets-alertpanel', ui:'error-panel', bodyPadding:10});
 Ext.application({extend:RosettaStone.Application, name:'RosettaStone', mainView:'RosettaStone.view.main.Main'});
