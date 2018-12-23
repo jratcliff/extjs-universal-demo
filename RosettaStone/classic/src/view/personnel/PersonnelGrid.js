@@ -3,32 +3,37 @@
  */
 Ext.define('RosettaStone.view.personnel.PersonnelGrid', {
     extend: 'Ext.grid.Panel',
-    xtype: 'personnelgrid',
+    xtype: 'personnel-grid',
 
     requires: [
-        'RosettaStone.store.Personnel'
+
     ],
 
-    title: 'Personnel',
+    reference: 'personnelGrid',
 
     bind: {
         store: '{personnel}',
         selection: '{personnelRecord}'
     },
 
+    dockedItems: [{
+        xtype: 'toolbar',
+        dock: 'bottom',
+        items: [{
+            text: 'View in popup',
+            bind: {
+                // binding example to the 'selection' property of the grid
+                // that has a reference name of 'personnelGrid'
+                disabled: '{!personnelGrid.selection}'
+            },
+            handler: 'onPopupViewClick'
+        }]
+    }],
+
     columns: [
         {
             text: 'Name',
-            dataIndex: 'name'
-        },
-        {
-            text: 'Email',
-            dataIndex: 'email',
-            flex: 1
-        },
-        {
-            text: 'Phone',
-            dataIndex: 'phone',
+            dataIndex: 'name',
             flex: 1
         }
     ],

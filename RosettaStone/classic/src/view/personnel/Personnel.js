@@ -21,43 +21,46 @@ Ext.define('RosettaStone.view.personnel.Personnel', {
         align: 'stretch'
     },
 
-    items: [
+    dockedItems: [
+        // validation alert
         {
-            xtype: 'personnelgrid',
-            reference: 'personnelgrid',
+            xtype: 'widgets-alertpanel',
+            ui: 'error-panel',
+            weight: -10, // negative value will push this panel above the header
+            dock: 'top',
+            hidden: true,
+            bind: {
+                hidden: '{!validationMessage}',
+                html: '{validationMessage}'
+            }
+        },
+        // pending changes alert
+        {
+            xtype: 'widgets-alertpanel',
+            ui: 'warning-panel',
+            weight: -10, // negative value will push this panel above the header
+            dock: 'top',
+            hidden: true,
+            bind: {
+                hidden: '{!pendingChangesMessage}',
+                html: '{pendingChangesMessage}'
+            }
+        }
+    ],
+
+    items: [
+        // grid
+        {
+            xtype: 'personnel-grid',
             flex: 1
         },
+        // detail form
         {
-            xtype: 'form',
-            title: 'Details',
-            bodyPadding: 10,
-            width: 200,
-            fieldDefaults: {
-                labelAlign: 'top'
-            },
-            items: [
-                {
-                    xtype: 'textfield',
-                    fieldLabel: 'Name',
-                    bind: {
-                        value: '{personnelRecord.name}'
-                    }
-                },
-                {
-                    xtype: 'textfield',
-                    fieldLabel: 'Email',
-                    bind: {
-                        value: '{personnelRecord.email}'
-                    }
-                },
-                {
-                    xtype: 'textfield',
-                    fieldLabel: 'name',
-                    bind: {
-                        value: '{personnelRecord.phone}'
-                    }
-                }
-            ]
+            xtype: 'personnel-details',
+            flex: 2,
+            bind: {
+                hidden: '{!personnelRecord}'
+            }
         }
     ]
 });
