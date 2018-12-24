@@ -1383,12 +1383,12 @@
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-triton/sass/src/menu/Menu.scss:1 */
 .x-menu-item-active .x-menu-item-text {
-    font-weight: 700;
+    font-weight: 400;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/packages/local/misOASV2/classic/sass/src/sencha-themer-defaults.scss:3 */
 .x-tagfield-empty-input,
 .x-tagfield-input-field {
-    color: #000;
+    color: #404040;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/packages/local/misOASV2/classic/sass/src/sencha-themer-defaults.scss:9 */
 .x-form-field::-webkit-input-placeholder {
@@ -1432,25 +1432,25 @@
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/packages/local/misOASV2/classic/sass/src/sencha-themer-defaults.scss:35 */
 a {
-    color: #0078d2;
+    color: none;
     text-decoration: none;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/packages/local/misOASV2/classic/sass/src/sencha-themer-defaults.scss:39 */
 a:visited,
 a.x-sencha-themer-visited {
-    color: #0078d2;
+    color: none;
     text-decoration: none;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/packages/local/misOASV2/classic/sass/src/sencha-themer-defaults.scss:44 */
 a:hover,
 a.x-sencha-themer-visited:hover {
-    color: #0078d2;
+    color: none;
     text-decoration: none;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/packages/local/misOASV2/classic/sass/src/sencha-themer-defaults.scss:49 */
 a:active,
 a.x-sencha-themer-visited:active {
-    color: #0078d2;
+    color: none;
     text-decoration: none;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/packages/local/misOASV2/classic/sass/src/sencha-themer-defaults.scss:54 */
@@ -1461,7 +1461,7 @@ a.x-btn:active {
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/packages/local/misOASV2/classic/sass/src/sencha-themer-defaults.scss:59 */
 .x-grid-cell-inner-row-numberer {
-    color: #000;
+    color: #404040;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:187 */
 .x-btn-transparent-button-large {
@@ -1477,7 +1477,7 @@ a.x-btn:active {
     -moz-border-radius-bottomleft: 4px;
     -webkit-border-bottom-left-radius: 4px;
     border-bottom-left-radius: 4px;
-    padding: 5px 7px 5px 7px;
+    padding: 9px 9px 9px 9px;
     border-width: 0px;
     border-style: solid;
     background-image: none;
@@ -1504,7 +1504,7 @@ a.x-btn:active {
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:281 */
 .x-btn-transparent-button-large-frameInfo {
-    font-family: th-5-5-5-5-0-0-0-0-5-7-5-7;
+    font-family: th-5-5-5-5-0-0-0-0-9-9-9-9;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:347 */
 .x-btn-transparent-button-large-tl {
@@ -1576,7 +1576,7 @@ a.x-btn:active {
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:464 */
 .x-btn-transparent-button-large-mc {
-    padding: 0px 2px 0px 2px;
+    padding: 4px 4px 4px 4px;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2463 */
 .x-btn-transparent-button-large {
@@ -1584,29 +1584,29 @@ a.x-btn:active {
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2470 */
 .x-btn-button-transparent-button-large {
-    min-height: 36px;
+    min-height: 24px;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2475 */
 .x-ie9m .x-btn-button-transparent-button-large {
     min-height: auto;
-    height: 36px;
+    height: 24px;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2482 */
 .x-btn-inner-transparent-button-large {
-    font: 700 18px/36px 'Open Sans', sans-serif;
+    font: 400 16px/20px 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
     color: #76787a;
-    padding: 0 4px;
+    padding: 0 10px;
     max-width: 100%;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2502 */
 .x-ie9 .x-btn-icon-right > .x-btn-inner-transparent-button-large,
 .x-ie9 .x-btn-icon-left > .x-btn-inner-transparent-button-large {
-    max-width: calc(100% - 30px);
+    max-width: calc(100% - 24px);
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2510 */
 .x-safari8m .x-btn-icon-right > .x-btn-inner-transparent-button-large,
 .x-safari8m .x-btn-icon-left > .x-btn-inner-transparent-button-large {
-    max-width: calc(100% - 29px);
+    max-width: calc(100% - 23px);
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2516 */
 .x-ie10p .x-btn-inner-transparent-button-large {
@@ -1614,20 +1614,20 @@ a.x-btn:active {
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2521 */
 .x-btn-icon-el-transparent-button-large {
-    font-size: 30px;
-    height: 30px;
+    font-size: 24px;
+    height: 24px;
     color: #333;
-    line-height: 30px;
+    line-height: 24px;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2527 */
 .x-btn-icon-left > .x-btn-icon-el-transparent-button-large,
 .x-btn-icon-right > .x-btn-icon-el-transparent-button-large {
-    width: 30px;
+    width: 24px;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2532 */
 .x-btn-icon-top > .x-btn-icon-el-transparent-button-large,
 .x-btn-icon-bottom > .x-btn-icon-el-transparent-button-large {
-    min-width: 30px;
+    min-width: 24px;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2554 */
 .x-ie8 .x-btn-icon-el-transparent-button-large.x-btn-glyph {
@@ -1635,11 +1635,11 @@ a.x-btn:active {
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2561 */
 .x-btn-text.x-btn-icon-left > .x-btn-icon-el-transparent-button-large {
-    margin-right: 4px;
+    margin-right: 0;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2572 */
 .x-btn-text.x-btn-icon-right > .x-btn-icon-el-transparent-button-large {
-    margin-left: 4px;
+    margin-left: 0;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2583 */
 .x-btn-text.x-btn-icon-top > .x-btn-icon-el-transparent-button-large {
@@ -1655,12 +1655,12 @@ a.x-btn:active {
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2596 */
 .x-btn-arrow-right > .x-btn-text.x-btn-icon-right > .x-btn-icon-el-transparent-button-large {
-    margin-right: 4px;
+    margin-right: 10px;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2603 */
 .x-btn-arrow-bottom > .x-btn-button-transparent-button-large,
 .x-btn-split-bottom > .x-btn-button-transparent-button-large {
-    padding-bottom: 1px;
+    padding-bottom: 9px;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2609 */
 .x-btn-wrap-transparent-button-large.x-btn-arrow-right:after {
@@ -1678,7 +1678,7 @@ a.x-btn:active {
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2663 */
 .x-btn-wrap-transparent-button-large.x-btn-split-right > .x-btn-button {
-    padding-right: 7px;
+    padding-right: 9px;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2671 */
 .x-btn-wrap-transparent-button-large.x-btn-split-right > .x-btn-button:after {
@@ -1690,11 +1690,11 @@ a.x-btn:active {
     content: "\f0d7";
     font: 24px/1 FontAwesome;
     color: #f0f0f0;
-    padding-left: 7px;
+    padding-left: 9px;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2702 */
 .x-btn-wrap-transparent-button-large.x-btn-split-bottom {
-    margin-bottom: -1px;
+    margin-bottom: -9px;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2704 */
 .x-btn-wrap-transparent-button-large.x-btn-split-bottom > .x-btn-button:after {
@@ -1713,7 +1713,7 @@ a.x-btn:active {
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2751 */
 .x-btn-split-right > .x-btn-text.x-btn-icon-right > .x-btn-icon-el-transparent-button-large {
-    margin-right: 4px;
+    margin-right: 10px;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2757 */
 .x-keyboard-mode .x-btn-focus.x-btn-transparent-button-large {
@@ -1729,7 +1729,7 @@ a.x-btn:active {
     top: 0;
     right: 0;
     height: 100%;
-    width: 39px;
+    width: 41px;
     pointer-events: none;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2810 */
@@ -1907,8 +1907,8 @@ a.x-btn:active {
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:3123 */
 .x-btn-disabled.x-btn-transparent-button-large {
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
-    opacity: 0.3;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    opacity: 0.5;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:187 */
 .x-btn-transparent-button-small {
@@ -1924,7 +1924,7 @@ a.x-btn:active {
     -moz-border-radius-bottomleft: 4px;
     -webkit-border-bottom-left-radius: 4px;
     border-bottom-left-radius: 4px;
-    padding: 4px 7px 4px 7px;
+    padding: 7px 7px 7px 7px;
     border-width: 0px;
     border-style: solid;
     background-image: none;
@@ -1951,7 +1951,7 @@ a.x-btn:active {
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:281 */
 .x-btn-transparent-button-small-frameInfo {
-    font-family: th-4-4-4-4-0-0-0-0-4-7-4-7;
+    font-family: th-4-4-4-4-0-0-0-0-7-7-7-7;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:347 */
 .x-btn-transparent-button-small-tl {
@@ -2023,7 +2023,7 @@ a.x-btn:active {
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:464 */
 .x-btn-transparent-button-small-mc {
-    padding: 0px 3px 0px 3px;
+    padding: 3px 3px 3px 3px;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2463 */
 .x-btn-transparent-button-small {
@@ -2031,29 +2031,29 @@ a.x-btn:active {
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2470 */
 .x-btn-button-transparent-button-small {
-    min-height: 30px;
+    min-height: 16px;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2475 */
 .x-ie9m .x-btn-button-transparent-button-small {
     min-height: auto;
-    height: 30px;
+    height: 16px;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2482 */
 .x-btn-inner-transparent-button-small {
-    font: 700 12px/30px 'Open Sans', sans-serif;
+    font: 400 12px/16px 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
     color: #76787a;
-    padding: 0 4px;
+    padding: 0 5px;
     max-width: 100%;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2502 */
 .x-ie9 .x-btn-icon-right > .x-btn-inner-transparent-button-small,
 .x-ie9 .x-btn-icon-left > .x-btn-inner-transparent-button-small {
-    max-width: calc(100% - 18px);
+    max-width: calc(100% - 16px);
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2510 */
 .x-safari8m .x-btn-icon-right > .x-btn-inner-transparent-button-small,
 .x-safari8m .x-btn-icon-left > .x-btn-inner-transparent-button-small {
-    max-width: calc(100% - 17px);
+    max-width: calc(100% - 15px);
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2516 */
 .x-ie10p .x-btn-inner-transparent-button-small {
@@ -2061,20 +2061,20 @@ a.x-btn:active {
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2521 */
 .x-btn-icon-el-transparent-button-small {
-    font-size: 18px;
-    height: 18px;
+    font-size: 16px;
+    height: 16px;
     color: #333;
-    line-height: 18px;
+    line-height: 16px;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2527 */
 .x-btn-icon-left > .x-btn-icon-el-transparent-button-small,
 .x-btn-icon-right > .x-btn-icon-el-transparent-button-small {
-    width: 18px;
+    width: 16px;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2532 */
 .x-btn-icon-top > .x-btn-icon-el-transparent-button-small,
 .x-btn-icon-bottom > .x-btn-icon-el-transparent-button-small {
-    min-width: 18px;
+    min-width: 16px;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2554 */
 .x-ie8 .x-btn-icon-el-transparent-button-small.x-btn-glyph {
@@ -2082,11 +2082,11 @@ a.x-btn:active {
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2561 */
 .x-btn-text.x-btn-icon-left > .x-btn-icon-el-transparent-button-small {
-    margin-right: 4px;
+    margin-right: 3px;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2572 */
 .x-btn-text.x-btn-icon-right > .x-btn-icon-el-transparent-button-small {
-    margin-left: 4px;
+    margin-left: 3px;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2583 */
 .x-btn-text.x-btn-icon-top > .x-btn-icon-el-transparent-button-small {
@@ -2102,12 +2102,12 @@ a.x-btn:active {
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2596 */
 .x-btn-arrow-right > .x-btn-text.x-btn-icon-right > .x-btn-icon-el-transparent-button-small {
-    margin-right: 4px;
+    margin-right: 5px;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2603 */
 .x-btn-arrow-bottom > .x-btn-button-transparent-button-small,
 .x-btn-split-bottom > .x-btn-button-transparent-button-small {
-    padding-bottom: 1px;
+    padding-bottom: 7px;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2609 */
 .x-btn-wrap-transparent-button-small.x-btn-arrow-right:after {
@@ -2141,7 +2141,7 @@ a.x-btn:active {
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2702 */
 .x-btn-wrap-transparent-button-small.x-btn-split-bottom {
-    margin-bottom: -1px;
+    margin-bottom: -7px;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2704 */
 .x-btn-wrap-transparent-button-small.x-btn-split-bottom > .x-btn-button:after {
@@ -2160,7 +2160,7 @@ a.x-btn:active {
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2751 */
 .x-btn-split-right > .x-btn-text.x-btn-icon-right > .x-btn-icon-el-transparent-button-small {
-    margin-right: 4px;
+    margin-right: 5px;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2757 */
 .x-keyboard-mode .x-btn-focus.x-btn-transparent-button-small {
@@ -2354,8 +2354,8 @@ a.x-btn:active {
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:3123 */
 .x-btn-disabled.x-btn-transparent-button-small {
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
-    opacity: 0.3;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    opacity: 0.5;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:187 */
 .x-btn-transparent-button-medium {
@@ -2371,7 +2371,7 @@ a.x-btn:active {
     -moz-border-radius-bottomleft: 4px;
     -webkit-border-bottom-left-radius: 4px;
     border-bottom-left-radius: 4px;
-    padding: 4px 7px 4px 7px;
+    padding: 8px 8px 8px 8px;
     border-width: 0px;
     border-style: solid;
     background-image: none;
@@ -2398,7 +2398,7 @@ a.x-btn:active {
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:281 */
 .x-btn-transparent-button-medium-frameInfo {
-    font-family: th-4-4-4-4-0-0-0-0-4-7-4-7;
+    font-family: th-4-4-4-4-0-0-0-0-8-8-8-8;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:347 */
 .x-btn-transparent-button-medium-tl {
@@ -2470,7 +2470,7 @@ a.x-btn:active {
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:464 */
 .x-btn-transparent-button-medium-mc {
-    padding: 0px 3px 0px 3px;
+    padding: 4px 4px 4px 4px;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2463 */
 .x-btn-transparent-button-medium {
@@ -2478,29 +2478,29 @@ a.x-btn:active {
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2470 */
 .x-btn-button-transparent-button-medium {
-    min-height: 32px;
+    min-height: 20px;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2475 */
 .x-ie9m .x-btn-button-transparent-button-medium {
     min-height: auto;
-    height: 32px;
+    height: 20px;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2482 */
 .x-btn-inner-transparent-button-medium {
-    font: 700 13px/32px 'Open Sans', sans-serif;
+    font: 400 14px/18px 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
     color: #76787a;
-    padding: 0 4px;
+    padding: 0 8px;
     max-width: 100%;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2502 */
 .x-ie9 .x-btn-icon-right > .x-btn-inner-transparent-button-medium,
 .x-ie9 .x-btn-icon-left > .x-btn-inner-transparent-button-medium {
-    max-width: calc(100% - 24px);
+    max-width: calc(100% - 20px);
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2510 */
 .x-safari8m .x-btn-icon-right > .x-btn-inner-transparent-button-medium,
 .x-safari8m .x-btn-icon-left > .x-btn-inner-transparent-button-medium {
-    max-width: calc(100% - 23px);
+    max-width: calc(100% - 19px);
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2516 */
 .x-ie10p .x-btn-inner-transparent-button-medium {
@@ -2508,20 +2508,20 @@ a.x-btn:active {
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2521 */
 .x-btn-icon-el-transparent-button-medium {
-    font-size: 24px;
-    height: 24px;
+    font-size: 20px;
+    height: 20px;
     color: #333;
-    line-height: 24px;
+    line-height: 20px;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2527 */
 .x-btn-icon-left > .x-btn-icon-el-transparent-button-medium,
 .x-btn-icon-right > .x-btn-icon-el-transparent-button-medium {
-    width: 24px;
+    width: 20px;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2532 */
 .x-btn-icon-top > .x-btn-icon-el-transparent-button-medium,
 .x-btn-icon-bottom > .x-btn-icon-el-transparent-button-medium {
-    min-width: 24px;
+    min-width: 20px;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2554 */
 .x-ie8 .x-btn-icon-el-transparent-button-medium.x-btn-glyph {
@@ -2529,11 +2529,11 @@ a.x-btn:active {
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2561 */
 .x-btn-text.x-btn-icon-left > .x-btn-icon-el-transparent-button-medium {
-    margin-right: 4px;
+    margin-right: 0px;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2572 */
 .x-btn-text.x-btn-icon-right > .x-btn-icon-el-transparent-button-medium {
-    margin-left: 4px;
+    margin-left: 0px;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2583 */
 .x-btn-text.x-btn-icon-top > .x-btn-icon-el-transparent-button-medium {
@@ -2549,12 +2549,12 @@ a.x-btn:active {
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2596 */
 .x-btn-arrow-right > .x-btn-text.x-btn-icon-right > .x-btn-icon-el-transparent-button-medium {
-    margin-right: 4px;
+    margin-right: 8px;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2603 */
 .x-btn-arrow-bottom > .x-btn-button-transparent-button-medium,
 .x-btn-split-bottom > .x-btn-button-transparent-button-medium {
-    padding-bottom: 1px;
+    padding-bottom: 8px;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2609 */
 .x-btn-wrap-transparent-button-medium.x-btn-arrow-right:after {
@@ -2572,7 +2572,7 @@ a.x-btn:active {
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2663 */
 .x-btn-wrap-transparent-button-medium.x-btn-split-right > .x-btn-button {
-    padding-right: 7px;
+    padding-right: 8px;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2671 */
 .x-btn-wrap-transparent-button-medium.x-btn-split-right > .x-btn-button:after {
@@ -2584,11 +2584,11 @@ a.x-btn:active {
     content: "\f0d7";
     font: 20px/1 FontAwesome;
     color: #f0f0f0;
-    padding-left: 7px;
+    padding-left: 8px;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2702 */
 .x-btn-wrap-transparent-button-medium.x-btn-split-bottom {
-    margin-bottom: -1px;
+    margin-bottom: -8px;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2704 */
 .x-btn-wrap-transparent-button-medium.x-btn-split-bottom > .x-btn-button:after {
@@ -2607,7 +2607,7 @@ a.x-btn:active {
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2751 */
 .x-btn-split-right > .x-btn-text.x-btn-icon-right > .x-btn-icon-el-transparent-button-medium {
-    margin-right: 4px;
+    margin-right: 8px;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2757 */
 .x-keyboard-mode .x-btn-focus.x-btn-transparent-button-medium {
@@ -2623,7 +2623,7 @@ a.x-btn:active {
     top: 0;
     right: 0;
     height: 100%;
-    width: 33px;
+    width: 34px;
     pointer-events: none;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:2810 */
@@ -2801,8 +2801,8 @@ a.x-btn:active {
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/button/Button.scss:3123 */
 .x-btn-disabled.x-btn-transparent-button-medium {
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
-    opacity: 0.3;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    opacity: 0.5;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:799 */
 .x-panel-sei_mis_header {
@@ -2838,8 +2838,8 @@ a.x-btn:active {
 .x-panel-header-title-sei_mis_header {
     color: #1a1a1a;
     font-size: 16px;
-    font-weight: 700;
-    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-family: 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
     line-height: 29px;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:929 */
@@ -2907,10 +2907,10 @@ a.x-btn:active {
 .x-panel-body-sei_mis_header {
     background: #fff;
     border-color: #d1d1d1;
-    color: #000;
+    color: #404040;
     font-size: 13px;
-    font-weight: 400;
-    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-family: 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
     border-width: 1px;
     border-style: solid;
 }
@@ -3150,8 +3150,8 @@ a.x-btn:active {
 .x-panel-header-title-error-panel {
     color: #a94442;
     font-size: 16px;
-    font-weight: 700;
-    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-family: 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
     line-height: 20px;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:929 */
@@ -3221,8 +3221,8 @@ a.x-btn:active {
     border-color: #d1d1d1;
     color: #a94442;
     font-size: 13px;
-    font-weight: 400;
-    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-family: 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
     border-width: 1px;
     border-style: solid;
 }
@@ -3462,8 +3462,8 @@ a.x-btn:active {
 .x-panel-header-title-warning-panel {
     color: #8a6d3b;
     font-size: 16px;
-    font-weight: 700;
-    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-family: 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
     line-height: 20px;
 }
 /* /Users/sencha/Sites/CMU/extjs-workspace/ext/classic/theme-neutral/sass/var/panel/Panel.scss:929 */
@@ -3533,8 +3533,8 @@ a.x-btn:active {
     border-color: #d1d1d1;
     color: #8a6d3b;
     font-size: 13px;
-    font-weight: 400;
-    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-family: 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
     border-width: 1px;
     border-style: solid;
 }
