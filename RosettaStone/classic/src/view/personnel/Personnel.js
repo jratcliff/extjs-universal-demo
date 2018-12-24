@@ -58,6 +58,7 @@ Ext.define('RosettaStone.view.personnel.Personnel', {
         {
             xtype: 'personnel-details',
             flex: 2,
+            hidden: true, // show initially hidden
             bind: {
                 hidden: '{!personnelRecord}'
             }
